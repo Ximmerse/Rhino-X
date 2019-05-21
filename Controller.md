@@ -101,4 +101,9 @@ public class EventListenerDemo : MonoBehaviour, IPointerDownHandler, IPointerUpH
             
 ```
 
+
+!> RxRaycaster 基于物理系统，也就是说，要求GameObject上，必须有 Collider 并且层级处于 RxRaycaster.CullingMask层级内才能与控制器实现交互。
+!> 关于Collider的设置， 可以参考 Controller UI场景中的UI组件上的BoxCollider设置。
+
+
 - 我们已经知道了 Controller 的基本使用方式。 接下来请编译并安装 Controller UI 场景，体验使用 Controller 在AR场景中的交互方式吧 ！
