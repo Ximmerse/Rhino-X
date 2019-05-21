@@ -1,33 +1,26 @@
-- [目 录](#---)
-  * [常规组件](#----)
+#Table of Contents
+- [System Introduction](#system-introduction)
+- [System Specifications](#system-specifications)
+- [Hardware Setup](#hardware-setup)
+- [Development Environment](#development-environment)
+- [Development Introduction](#development-introduction)
+- [API](#api)
+  * [Frequently Used Component](#frequently-used-component)
   * [ARCamera](#arcamera)
   * [Tag Tracker](#tag-tracker)
   * [Marker Identity](#marker-identity)
   * [Bench Marker](#bench-marker)
   * [Dynamic Marker](#dynamic-marker)
-  * [概念与组件](#-----)
-  * [AR摄像机](#ar---)
+- [Advanced SDK Guide](#advanced-sdk-guide)
+  * [Concept and Components](#concept-and-components)
+  * [ARCamera](#arcamera-1)
   * [Marker Target](#marker-target)
-  * [从头开始](#----)
-  * [自定义Build Preset](#---build-preset)
-目 录
-=====
+  * [Start From Scratch](#start-from-scratch)
+  * [Customized Build Preset](#customized-build-preset)
 
-[[System Introduction]](#system-introduction)
 
-[[2.]{.underline} [设备特性]{.underline} 3](#_Toc7362648)
 
-[[3.]{.underline} [软硬件使用说明]{.underline} 4](#_Toc7362649)
-
-[[4.]{.underline} [开发环境说明]{.underline} 6](#_Toc7362650)
-
-[[5.]{.underline} [入门指南]{.underline} 7](#_Toc7362651)
-
-[[6.]{.underline} [API接口说明]{.underline} 7](#_Toc7362652)
-
-[[7.]{.underline} [进阶功能说明]{.underline} 7](#_Toc7362653)
-
-[System Introduction](#system-introduction)
+# System Introduction
 
 
 > Wonderland系统是一套三维立体应用交互系统，包括头戴显示设备和可自定义交互设备。
@@ -101,7 +94,7 @@ height="3.703345363079615in"}
 
 **图10. 娱乐行业应用示例**
 
-2.  []{#_Toc7362648 .anchor}设备特性
+# System Specifications
 
 > Wonderland系统是以头戴显示设备为基础，以可自定义交互设备为拓展，以网络为多机互联工具的综合应用协作系统，下面对该系统的硬件、软件、系统特性进行简要介绍。
 
@@ -163,7 +156,7 @@ Prediction）降低延时算法
 
 -   云平台资源共享系统
 
-3.  []{#_Toc7362649 .anchor}软硬件使用说明
+# Hardware Setup
 
 3.1 硬件说明1
 
@@ -235,24 +228,24 @@ height="2.126800087489064in"}
 
 > 应用APP开发好后，通过USB线和ADB工具（另外可以使用Visor），将APP安装到该系统中，安装完成后会在应用显示界面中显示相应的应用图标。由于不同的应用所需要的权限不一致，需要通过系统权限配置去配置应用的权限，直接通过Visor使用系统的权限配置方法。
 
-4.  []{#_Toc7362650 .anchor}开发环境说明
+# Development Environment
 
 4.1 开发硬件环境
 
 4.2 开发软件环境
 
-5.  []{#_Toc7362651 .anchor}入门指南
+# Development Introduction
 
-6.  []{#_Toc7362652 .anchor}API接口说明
+# API
 
 本章节主要以程序开发的角度阐述说明SDK 中脚本、组件的功能。
 
-常规组件
+## Frequently Used Component
 --------
 
 介绍在SDK 场景中会出现并且使用的组件。
 
-ARCamera
+## ARCamera
 --------
 
 AR Camera组件主要用作于配置代表头显的的渲染显示以及旋转姿态。
@@ -266,7 +259,7 @@ Mode用于配置摄像机的渲染显示模式。Stereo代表摄像机的渲染�
 -   EyeCovergenceMode用于配置在Stereo模式下，两个摄像机相交位置。Infinity代表两个摄像机的方向是平行的。Cross
 Plane代表两个摄像机会在前方向一定距离处相交。
 
-Tag Tracker
+## Tag Tracker
 -----------
 
 Tag Tracker组件主要用于配置该Camera的Tracking Profiles，指明该AR
@@ -277,7 +270,7 @@ Profiles在[[上文]{.underline}](README.md)中我们提到了头戴设备能追
 Profiles就是用于分辨不同硬件追踪目标的数据文件，**在一个Profile中不能包含有相同ID
 的Marker**。
 
-Marker Identity
+## Marker Identity
 ---------------
 
 Marker Identity用于管理Marker Target所对应的Marker/Marker Group
@@ -286,7 +279,7 @@ ID以及本身的能见度。
 Marker ID 这个这段可以填写单Marker 的ID 字段，或是组合Marker的 Marker
 Group ID 字段。
 
-Bench Marker
+## Bench Marker
 ------------
 
 Bench Marker 可以理解为传统意义上的地面，用于代表坐标系的原点。
@@ -344,7 +337,7 @@ height="7.727083333333334in"}
 
 至此，我们完成了以Bench Marker 为基础的Trakcing坐标系的缩放调整。
 
-Dynamic Marker
+## Dynamic Marker
 --------------
 
 Dynamic Marker\` 是用于追踪指定的Marker并获取其相对的姿态信息。
@@ -387,22 +380,22 @@ height="4.325694444444444in"}
 
 至此，Dynamic Marker的缩放已全部完成。
 
-7.  []{#_Toc7362653 .anchor}进阶功能说明
+# Advanced SDK Guide
 
 本章节将会在快速开始的基础上，进一步的解释详细的概念以及SDK的进阶用途。
 
-概念与组件
+## Concept and Components
 ----------
 
 这里我们将会介绍一下实际开发中的会遇到的一些概念与约定名称。
 
-AR摄像机
+## ARCamera
 --------
 
 AR摄像机是作用于在Unity场景中模拟人眼看到的信息。为了Marker的追踪以及视觉呈现的效果，场景中必须有一个附有Camera组件的GameObject，同时该GameObject上需要附有ARCamera以及Tag
 Tracker两个组件。可以以Demo场景中的Camera设置作为参考。
 
-Marker Target
+## Marker Target
 -------------
 
 Marker Target 是硬件Marker在Unity虚拟场景中的载体容器。
@@ -414,7 +407,7 @@ Marker或者Bench Marker（二选一），就完成了Marker Target的创建了�
 ，他们都可以使用scatter cards (单Marker)或者marker group (组合Marker)
 的marker类型。
 
-从头开始
+## Start From Scratch
 --------
 
 如果需要从头开始搭建一个真实开发场景，开发者可以遵循以下步骤：
@@ -534,7 +527,7 @@ height="4.947222222222222in"}
 
 按照流程打包成sdk即可进行测试。
 
-自定义Build Preset
+## Customized Build Preset
 ------------------
 
 Build Preset 是PE Plugins 中的Build Manager 所使用的快速设置Build
