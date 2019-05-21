@@ -1,4 +1,4 @@
-#Table of Contents
+# Table of Contents
 - [System Introduction](#system-introduction)
 - [System Specifications](#system-specifications)
 - [Hardware Setup](#hardware-setup)
