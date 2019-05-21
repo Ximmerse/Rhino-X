@@ -1,0 +1,249 @@
+\hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera}{}\section{Ximmerse.\+Rhino\+X.\+A\+R\+Camera Class Reference}
+\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera}\index{Ximmerse.\+Rhino\+X.\+A\+R\+Camera@{Ximmerse.\+Rhino\+X.\+A\+R\+Camera}}
+
+
+AR camera is the script that represents virtual camera in AR world. Developer may get the position/rotation of current head transform.  
+
+
+Inheritance diagram for Ximmerse.\+Rhino\+X.\+A\+R\+Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ximmerse_1_1_rhino_x_1_1_a_r_camera}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a4b8e8609b5b3c5cc7e9722be7e11caff}{Recenter\+Tracking}} (bool Yaw\+Only=true)
+\begin{DoxyCompactList}\small\item\em Recenters the tracking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_aefc6422a8587e8769e5e224c2ce66148}{Set\+Fov}} (float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ace7c430868896aa5cc911f023a0c4ec2}{h\+Fov}}, float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a386210a7a33ca8df7dd6fd8e0530bb55}{v\+Fov}})
+\begin{DoxyCompactList}\small\item\em Sets the horizontal and vertical fov. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a8990c22f1fd7eadc81fc8cce26e307ad}{Reset\+Fov}} ()
+\begin{DoxyCompactList}\small\item\em Resets the horizontal and vertical fov. Default value \+: h\+Fov = 77.\+099 , h\+Fov = 77.\+099 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a924a0d756c445884e15efabb10cd10bb}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a924a0d756c445884e15efabb10cd10bb}} 
+static Matrix4x4 {\bfseries Perspective} (float left, float right, float bottom, float top, float near, float far)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a55c0080aa29097a34d1983755f32f73d}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a55c0080aa29097a34d1983755f32f73d}} 
+Vector3 {\bfseries m\+\_\+recenter\+CompP} = Vector3.\+zero
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_aa4a6340782612679e7010d0e28ad806d}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_aa4a6340782612679e7010d0e28ad806d}} 
+Quaternion {\bfseries m\+\_\+recenter\+CompQ} = Quaternion.\+identity
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ae47108706cc7216eaa7dd50ffbef8851}{k\+Light\+Center\+\_\+X}} = 0
+\begin{DoxyCompactList}\small\item\em const projection matrix vertical offset (the m02 field of the projection matrix). This is the light center offset X \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a78a8ef179a5c613db4aae90a15aa1ffd}{k\+Light\+Center\+\_\+Y}} = -\/0.\+0779f
+\begin{DoxyCompactList}\small\item\em const projection matrix vertical offset (the m12 field of the projection matrix). This is the light center offset Y \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a2a7a6add621976cabf2958ea01f652fd}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a2a7a6add621976cabf2958ea01f652fd}} 
+static \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera}{A\+R\+Camera}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a83ddafe725c4738c84b292501ea9e55f}{Inter\+Pupil\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em I\+PD \+: inter pupil distance. Most common value is 0.\+062 (62mm), developer may customize this value . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_ximmerse_1_1_rhino_x_a6f6b7e0f3b580e31040b75578bbf4c94}{Anti\+Aliasing}} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ae64077302d7071482e8242b754af8af4}{Antialiasing}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the anti aliasing level of eye image. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a6374e45b33643924d3aa0c3e32360d73}{Track\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Should track position ? If set to use, position of head would not be updated by S\+DK. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ae2c6be1c7856874b2f66961adb1536ae}{Track\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Should track rotation ? If set to use, rotation of head would not be updated by S\+DK. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_ximmerse_1_1_rhino_x_1_1_pose}{Pose}} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_afdc65a0a6965edba5243a12d34a4cb18}{Head\+Pose}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Head pose (non predict) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile}{Object\+Tracking\+Profile}} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a3abfd51c012cf14af414f4c7df72de66}{Tracking\+Profile}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the currently loaded tag tracking profile. Sets this variable will cause the previous profile been unloaded, then the new one will be loaded. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ace7c430868896aa5cc911f023a0c4ec2}{h\+Fov}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the horizontal field of view. By default this value = 77.\+091. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a386210a7a33ca8df7dd6fd8e0530bb55}{v\+Fov}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the vertical field of view. By default this value = 77.\+091. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+static System.\+Action$<$ Camera, Camera $>$ \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a635b0074257b24358550492fa56389e7}{On\+Create\+Stereo\+Cameras}} = null
+\begin{DoxyCompactList}\small\item\em Event is fired after stereo eyes are created. Developers can add post effect scripts on this event. First camera parameter = left eye camera; Second camera parameter = right eye camera; \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+AR camera is the script that represents virtual camera in AR world. Developer may get the position/rotation of current head transform. 
+
+AR camera \+: rendering 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a4b8e8609b5b3c5cc7e9722be7e11caff}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a4b8e8609b5b3c5cc7e9722be7e11caff}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!Recenter\+Tracking@{Recenter\+Tracking}}
+\index{Recenter\+Tracking@{Recenter\+Tracking}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{Recenter\+Tracking()}{RecenterTracking()}}
+{\footnotesize\ttfamily bool Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+Recenter\+Tracking (\begin{DoxyParamCaption}\item[{bool}]{Yaw\+Only = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Recenters the tracking. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if tracking was recentered, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a8990c22f1fd7eadc81fc8cce26e307ad}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a8990c22f1fd7eadc81fc8cce26e307ad}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!Reset\+Fov@{Reset\+Fov}}
+\index{Reset\+Fov@{Reset\+Fov}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{Reset\+Fov()}{ResetFov()}}
+{\footnotesize\ttfamily void Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+Reset\+Fov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the horizontal and vertical fov. Default value \+: h\+Fov = 77.\+099 , h\+Fov = 77.\+099 
+
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_aefc6422a8587e8769e5e224c2ce66148}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_aefc6422a8587e8769e5e224c2ce66148}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!Set\+Fov@{Set\+Fov}}
+\index{Set\+Fov@{Set\+Fov}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Fov()}{SetFov()}}
+{\footnotesize\ttfamily void Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+Set\+Fov (\begin{DoxyParamCaption}\item[{float}]{h\+Fov,  }\item[{float}]{v\+Fov }\end{DoxyParamCaption})}
+
+
+
+Sets the horizontal and vertical fov. 
+
+\begin{DoxyReturn}{Returns}
+The fov.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em h\+Fov} & H fov.\\
+\hline
+{\em v\+Fov} & V fov.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ae47108706cc7216eaa7dd50ffbef8851}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ae47108706cc7216eaa7dd50ffbef8851}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!k\+Light\+Center\+\_\+X@{k\+Light\+Center\+\_\+X}}
+\index{k\+Light\+Center\+\_\+X@{k\+Light\+Center\+\_\+X}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{k\+Light\+Center\+\_\+X}{kLightCenter\_X}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+k\+Light\+Center\+\_\+X = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+const projection matrix vertical offset (the m02 field of the projection matrix). This is the light center offset X 
+
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a78a8ef179a5c613db4aae90a15aa1ffd}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a78a8ef179a5c613db4aae90a15aa1ffd}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!k\+Light\+Center\+\_\+Y@{k\+Light\+Center\+\_\+Y}}
+\index{k\+Light\+Center\+\_\+Y@{k\+Light\+Center\+\_\+Y}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{k\+Light\+Center\+\_\+Y}{kLightCenter\_Y}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+k\+Light\+Center\+\_\+Y = -\/0.\+0779f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+const projection matrix vertical offset (the m12 field of the projection matrix). This is the light center offset Y 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ae64077302d7071482e8242b754af8af4}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ae64077302d7071482e8242b754af8af4}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!Antialiasing@{Antialiasing}}
+\index{Antialiasing@{Antialiasing}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{Antialiasing}{Antialiasing}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ximmerse_1_1_rhino_x_a6f6b7e0f3b580e31040b75578bbf4c94}{Anti\+Aliasing}} Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+Antialiasing\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the anti aliasing level of eye image. 
+
+The anti aliasing.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_afdc65a0a6965edba5243a12d34a4cb18}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_afdc65a0a6965edba5243a12d34a4cb18}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!Head\+Pose@{Head\+Pose}}
+\index{Head\+Pose@{Head\+Pose}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{Head\+Pose}{HeadPose}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ximmerse_1_1_rhino_x_1_1_pose}{Pose}} Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+Head\+Pose\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Head pose (non predict) 
+
+Gets the current V\+IO output head pose. 
+
+The predict head pose.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ace7c430868896aa5cc911f023a0c4ec2}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ace7c430868896aa5cc911f023a0c4ec2}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!h\+Fov@{h\+Fov}}
+\index{h\+Fov@{h\+Fov}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{h\+Fov}{hFov}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+h\+Fov\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the horizontal field of view. By default this value = 77.\+091. 
+
+The h fov.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a83ddafe725c4738c84b292501ea9e55f}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a83ddafe725c4738c84b292501ea9e55f}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!Inter\+Pupil\+Distance@{Inter\+Pupil\+Distance}}
+\index{Inter\+Pupil\+Distance@{Inter\+Pupil\+Distance}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{Inter\+Pupil\+Distance}{InterPupilDistance}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+Inter\+Pupil\+Distance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+I\+PD \+: inter pupil distance. Most common value is 0.\+062 (62mm), developer may customize this value . 
+
+The inter pupil distance.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a3abfd51c012cf14af414f4c7df72de66}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a3abfd51c012cf14af414f4c7df72de66}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!Tracking\+Profile@{Tracking\+Profile}}
+\index{Tracking\+Profile@{Tracking\+Profile}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{Tracking\+Profile}{TrackingProfile}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile}{Object\+Tracking\+Profile}} Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+Tracking\+Profile\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets the currently loaded tag tracking profile. Sets this variable will cause the previous profile been unloaded, then the new one will be loaded. 
+
+The tracking profile.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a6374e45b33643924d3aa0c3e32360d73}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a6374e45b33643924d3aa0c3e32360d73}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!Track\+Position@{Track\+Position}}
+\index{Track\+Position@{Track\+Position}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{Track\+Position}{TrackPosition}}
+{\footnotesize\ttfamily bool Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+Track\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Should track position ? If set to use, position of head would not be updated by S\+DK. 
+
+{\ttfamily true} if shoud track position; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ae2c6be1c7856874b2f66961adb1536ae}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_ae2c6be1c7856874b2f66961adb1536ae}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!Track\+Rotation@{Track\+Rotation}}
+\index{Track\+Rotation@{Track\+Rotation}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{Track\+Rotation}{TrackRotation}}
+{\footnotesize\ttfamily bool Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+Track\+Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Should track rotation ? If set to use, rotation of head would not be updated by S\+DK. 
+
+{\ttfamily true} if shoud track position; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a386210a7a33ca8df7dd6fd8e0530bb55}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a386210a7a33ca8df7dd6fd8e0530bb55}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!v\+Fov@{v\+Fov}}
+\index{v\+Fov@{v\+Fov}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{v\+Fov}{vFov}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+v\+Fov\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the vertical field of view. By default this value = 77.\+091. 
+
+The v fov.
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a635b0074257b24358550492fa56389e7}\label{class_ximmerse_1_1_rhino_x_1_1_a_r_camera_a635b0074257b24358550492fa56389e7}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}!On\+Create\+Stereo\+Cameras@{On\+Create\+Stereo\+Cameras}}
+\index{On\+Create\+Stereo\+Cameras@{On\+Create\+Stereo\+Cameras}!Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera@{Ximmerse\+::\+Rhino\+X\+::\+A\+R\+Camera}}
+\subsubsection{\texorpdfstring{On\+Create\+Stereo\+Cameras}{OnCreateStereoCameras}}
+{\footnotesize\ttfamily System.\+Action$<$Camera, Camera$>$ Ximmerse.\+Rhino\+X.\+A\+R\+Camera.\+On\+Create\+Stereo\+Cameras = null\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Event is fired after stereo eyes are created. Developers can add post effect scripts on this event. First camera parameter = left eye camera; Second camera parameter = right eye camera; 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+H\+L\+A\+P\+I/\+Public/A\+R\+Camera.\+cs\item 
+H\+L\+A\+P\+I/\+Public/A\+R\+Camera\+\_\+\+Rendering.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile}{}\section{Ximmerse.\+Rhino\+X.\+Object\+Tracking\+Profile Class Reference}
+\label{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile}\index{Ximmerse.\+Rhino\+X.\+Object\+Tracking\+Profile@{Ximmerse.\+Rhino\+X.\+Object\+Tracking\+Profile}}
+Inheritance diagram for Ximmerse.\+Rhino\+X.\+Object\+Tracking\+Profile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_1_1_tracking_items}{Tracking\+Items}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a73cba033e2017accd3f607514ccf5935}{Add}} (string json\+Name, Unity\+Engine.\+Object json\+Object, string json\+Content)
+\begin{DoxyCompactList}\small\item\em Adds a tracking item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a7096567a6cc3599254f38f73aebc3b09}{Remove}} (int Index)
+\begin{DoxyCompactList}\small\item\em Removes the tracking items at the specific item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a1b298818407574a90fdd814b64a1108d}\label{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a1b298818407574a90fdd814b64a1108d}} 
+void {\bfseries On\+Validate\+Self} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a466e497ac9077bf261eb270b5a41f9f1}\label{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a466e497ac9077bf261eb270b5a41f9f1}} 
+string {\bfseries Description}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a3749a2ba2e7a79434c61475897b8d664}{Is\+Loaded}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Has the tracking profile loaded by tracking system ? \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_1_1_tracking_items}{Tracking\+Items}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_ad9d2e13ef6fdf8e901f7ee53cf42a7d3}{tracking\+Items}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the tracking items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a73cba033e2017accd3f607514ccf5935}\label{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a73cba033e2017accd3f607514ccf5935}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile@{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile}!Add@{Add}}
+\index{Add@{Add}!Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile@{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Ximmerse.\+Rhino\+X.\+Object\+Tracking\+Profile.\+Add (\begin{DoxyParamCaption}\item[{string}]{json\+Name,  }\item[{Unity\+Engine.\+Object}]{json\+Object,  }\item[{string}]{json\+Content }\end{DoxyParamCaption})}
+
+
+
+Adds a tracking item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Name} & Json name \+: the tracking json profile\textquotesingle{}s name\\
+\hline
+{\em json\+Object} & Json object \+: the tracking json object\textquotesingle{}s reference in your project asset. If you\textquotesingle{}re calling this A\+PI at runtime, json\+Object could be null. If you\textquotesingle{}re calling this A\+PI at unity editor, json\+Object should not be \mbox{\hyperlink{}{.}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a7096567a6cc3599254f38f73aebc3b09}\label{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a7096567a6cc3599254f38f73aebc3b09}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile@{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile}!Remove@{Remove}}
+\index{Remove@{Remove}!Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile@{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void Ximmerse.\+Rhino\+X.\+Object\+Tracking\+Profile.\+Remove (\begin{DoxyParamCaption}\item[{int}]{Index }\end{DoxyParamCaption})}
+
+
+
+Removes the tracking items at the specific item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Index} & Index.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a3749a2ba2e7a79434c61475897b8d664}\label{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_a3749a2ba2e7a79434c61475897b8d664}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile@{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile}!Is\+Loaded@{Is\+Loaded}}
+\index{Is\+Loaded@{Is\+Loaded}!Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile@{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile}}
+\subsubsection{\texorpdfstring{Is\+Loaded}{IsLoaded}}
+{\footnotesize\ttfamily bool Ximmerse.\+Rhino\+X.\+Object\+Tracking\+Profile.\+Is\+Loaded\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Has the tracking profile loaded by tracking system ? 
+
+{\ttfamily true} if is loaded; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_ad9d2e13ef6fdf8e901f7ee53cf42a7d3}\label{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_ad9d2e13ef6fdf8e901f7ee53cf42a7d3}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile@{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile}!tracking\+Items@{tracking\+Items}}
+\index{tracking\+Items@{tracking\+Items}!Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile@{Ximmerse\+::\+Rhino\+X\+::\+Object\+Tracking\+Profile}}
+\subsubsection{\texorpdfstring{tracking\+Items}{trackingItems}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_1_1_tracking_items}{Tracking\+Items}} \mbox{[}$\,$\mbox{]} Ximmerse.\+Rhino\+X.\+Object\+Tracking\+Profile.\+tracking\+Items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the tracking items. 
+
+The tracking items.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+L\+A\+P\+I/\+Public/Object\+Tracking\+Profile.\+cs\end{DoxyCompactItemize}

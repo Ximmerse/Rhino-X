@@ -1,0 +1,138 @@
+\hypertarget{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data}{}\section{Ximmerse.\+Rhino\+X.\+Calibration\+Serialization\+Data Class Reference}
+\label{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data}\index{Ximmerse.\+Rhino\+X.\+Calibration\+Serialization\+Data@{Ximmerse.\+Rhino\+X.\+Calibration\+Serialization\+Data}}
+
+
+Calibration serialization data. 用于持久化的数据格式。  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_acf57cae12382f29c523b48463346eba3}\label{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_acf57cae12382f29c523b48463346eba3}} 
+byte \mbox{[}$\,$\mbox{]} {\bfseries Serialize\+To\+Bytes} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data}{Calibration\+Serialization\+Data}} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_ab86d9a60c838e8fe8503f0b9126ef86e}{Deserialize}} (byte\mbox{[}$\,$\mbox{]} buffers, ref int pointer)
+\begin{DoxyCompactList}\small\item\em Deserialize the specified buffers in pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_abc749af23b37e44fa30a78afe8272f9e}\label{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_abc749af23b37e44fa30a78afe8272f9e}} 
+static List$<$ \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data}{Calibration\+Serialization\+Data}} $>$ {\bfseries Deserialize\+To\+List} (byte\mbox{[}$\,$\mbox{]} buffer)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a40dcec53e2ae1967cf4ef5aedff63c92}{Self\+ID}}
+\begin{DoxyCompactList}\small\item\em The marker ID represents \char`\"{}self\char`\"{} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_acc2ded62f0e4db7e4284f11494babd5b}{Other\+ID}}
+\begin{DoxyCompactList}\small\item\em The marker ID represents \char`\"{}other\char`\"{} \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a8919018eed725bf6c85ed9b1b32d4bdf}{P\+\_\+\+Self2\+Other}}
+\begin{DoxyCompactList}\small\item\em Position transfer self to other space \end{DoxyCompactList}\item 
+Quaternion \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_addd1ca5772b4c8fb9408383c5b7f6d99}{Q\+\_\+\+Self2\+Other}}
+\begin{DoxyCompactList}\small\item\em Rotation transfer self to other space \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a7d0239f8ee5618360d38e600ed4a4b2e}{P\+\_\+\+Other2\+Self}}
+\begin{DoxyCompactList}\small\item\em Position transfer other to self space \end{DoxyCompactList}\item 
+Quaternion \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a3988b74a9fe9394d03197c6e386ccfb6}{Q\+\_\+\+Other2\+Self}}
+\begin{DoxyCompactList}\small\item\em Rotation transfer other to self space \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a1485e91da74bc2ad82ba0e3d4aeb6df3}\label{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a1485e91da74bc2ad82ba0e3d4aeb6df3}} 
+static int {\bfseries Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Calibration serialization data. 用于持久化的数据格式。 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_ab86d9a60c838e8fe8503f0b9126ef86e}\label{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_ab86d9a60c838e8fe8503f0b9126ef86e}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}}
+\subsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data}{Calibration\+Serialization\+Data}} Ximmerse.\+Rhino\+X.\+Calibration\+Serialization\+Data.\+Deserialize (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffers,  }\item[{ref int}]{pointer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Deserialize the specified buffers in pointer. 
+
+\begin{DoxyReturn}{Returns}
+The deserialize.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em buffers} & Buffers.\\
+\hline
+{\em pointer} & Pointer.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_acc2ded62f0e4db7e4284f11494babd5b}\label{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_acc2ded62f0e4db7e4284f11494babd5b}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}!Other\+ID@{Other\+ID}}
+\index{Other\+ID@{Other\+ID}!Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}}
+\subsubsection{\texorpdfstring{Other\+ID}{OtherID}}
+{\footnotesize\ttfamily int Ximmerse.\+Rhino\+X.\+Calibration\+Serialization\+Data.\+Other\+ID}
+
+
+
+The marker ID represents \char`\"{}other\char`\"{} 
+
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a7d0239f8ee5618360d38e600ed4a4b2e}\label{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a7d0239f8ee5618360d38e600ed4a4b2e}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}!P\+\_\+\+Other2\+Self@{P\+\_\+\+Other2\+Self}}
+\index{P\+\_\+\+Other2\+Self@{P\+\_\+\+Other2\+Self}!Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}}
+\subsubsection{\texorpdfstring{P\+\_\+\+Other2\+Self}{P\_Other2Self}}
+{\footnotesize\ttfamily Vector3 Ximmerse.\+Rhino\+X.\+Calibration\+Serialization\+Data.\+P\+\_\+\+Other2\+Self}
+
+
+
+Position transfer other to self space 
+
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a8919018eed725bf6c85ed9b1b32d4bdf}\label{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a8919018eed725bf6c85ed9b1b32d4bdf}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}!P\+\_\+\+Self2\+Other@{P\+\_\+\+Self2\+Other}}
+\index{P\+\_\+\+Self2\+Other@{P\+\_\+\+Self2\+Other}!Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}}
+\subsubsection{\texorpdfstring{P\+\_\+\+Self2\+Other}{P\_Self2Other}}
+{\footnotesize\ttfamily Vector3 Ximmerse.\+Rhino\+X.\+Calibration\+Serialization\+Data.\+P\+\_\+\+Self2\+Other}
+
+
+
+Position transfer self to other space 
+
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a3988b74a9fe9394d03197c6e386ccfb6}\label{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a3988b74a9fe9394d03197c6e386ccfb6}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}!Q\+\_\+\+Other2\+Self@{Q\+\_\+\+Other2\+Self}}
+\index{Q\+\_\+\+Other2\+Self@{Q\+\_\+\+Other2\+Self}!Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}}
+\subsubsection{\texorpdfstring{Q\+\_\+\+Other2\+Self}{Q\_Other2Self}}
+{\footnotesize\ttfamily Quaternion Ximmerse.\+Rhino\+X.\+Calibration\+Serialization\+Data.\+Q\+\_\+\+Other2\+Self}
+
+
+
+Rotation transfer other to self space 
+
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_addd1ca5772b4c8fb9408383c5b7f6d99}\label{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_addd1ca5772b4c8fb9408383c5b7f6d99}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}!Q\+\_\+\+Self2\+Other@{Q\+\_\+\+Self2\+Other}}
+\index{Q\+\_\+\+Self2\+Other@{Q\+\_\+\+Self2\+Other}!Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}}
+\subsubsection{\texorpdfstring{Q\+\_\+\+Self2\+Other}{Q\_Self2Other}}
+{\footnotesize\ttfamily Quaternion Ximmerse.\+Rhino\+X.\+Calibration\+Serialization\+Data.\+Q\+\_\+\+Self2\+Other}
+
+
+
+Rotation transfer self to other space 
+
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a40dcec53e2ae1967cf4ef5aedff63c92}\label{class_ximmerse_1_1_rhino_x_1_1_calibration_serialization_data_a40dcec53e2ae1967cf4ef5aedff63c92}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}!Self\+ID@{Self\+ID}}
+\index{Self\+ID@{Self\+ID}!Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data@{Ximmerse\+::\+Rhino\+X\+::\+Calibration\+Serialization\+Data}}
+\subsubsection{\texorpdfstring{Self\+ID}{SelfID}}
+{\footnotesize\ttfamily int Ximmerse.\+Rhino\+X.\+Calibration\+Serialization\+Data.\+Self\+ID}
+
+
+
+The marker ID represents \char`\"{}self\char`\"{} 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+L\+A\+P\+I/\+Public/\+Calibration/Calibration\+Serialization\+Data.\+cs\end{DoxyCompactItemize}

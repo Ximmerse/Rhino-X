@@ -1,0 +1,115 @@
+\hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity}{}\section{Ximmerse.\+Rhino\+X.\+Runtime\+Calibration\+Entity Class Reference}
+\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity}\index{Ximmerse.\+Rhino\+X.\+Runtime\+Calibration\+Entity@{Ximmerse.\+Rhino\+X.\+Runtime\+Calibration\+Entity}}
+
+
+Runtime calibration entry.  
+
+
+Inheritance diagram for Ximmerse.\+Rhino\+X.\+Runtime\+Calibration\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a0dc5dfe6c0af4c0f8c079f1542e9fda6}\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a0dc5dfe6c0af4c0f8c079f1542e9fda6}} 
+void {\bfseries Update\+Tracked\+Info} ()
+\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a788798ab8698e05b46da74e84ebfbf14}{Update\+Calibration}} (\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity}{Runtime\+Calibration\+Entity}} other)
+\begin{DoxyCompactList}\small\item\em Updates the calibration. 更新对另一个已经标定的对象的标定数据. 要求 other 在调用此方法的时候可见。 返回一个 代表标定完成度的 normalized 的值。 \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a5d385358e0eba30a11f5ac28c93f495c}{Serialize\+To\+Bytes}} ()
+\begin{DoxyCompactList}\small\item\em Serialize the data of this entity to byte\mbox{[}\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a4089f89a884f71bd451b27d38ab978d0}{Is\+Calibrated}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether this T\+:\+Runtime\+Calibration\+Entry is calibrated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_af2d6869b466b8f5f0ead7eb434b95402}\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_af2d6869b466b8f5f0ead7eb434b95402}} 
+int {\bfseries Trackable\+ID}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_ad9cfbd99981ebb2a69e1c5e8d6f5c92d}{Is\+Tracked}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this T\+:\+Runtime\+Calibration\+Entry is tracked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a67a1202425a0a0bbe3c87539fb3117a3}\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a67a1202425a0a0bbe3c87539fb3117a3}} 
+Vector3 {\bfseries Tracked\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_ab7958796c66a525f239f487e83067204}\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_ab7958796c66a525f239f487e83067204}} 
+Vector3 {\bfseries World\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a59600142d6877b258221cfe5bb30ac3a}\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a59600142d6877b258221cfe5bb30ac3a}} 
+Quaternion {\bfseries Tracked\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a2b3850e48467f3c67eab5652cbfbc7ee}\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a2b3850e48467f3c67eab5652cbfbc7ee}} 
+Quaternion {\bfseries World\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_ab71d9cd08f0f16ad6e07e21d774ee8a0}\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_ab71d9cd08f0f16ad6e07e21d774ee8a0}} 
+System.\+Action$<$ \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity}{Runtime\+Calibration\+Entity}} $>$ {\bfseries On\+Calibrated}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Runtime calibration entry. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a5d385358e0eba30a11f5ac28c93f495c}\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a5d385358e0eba30a11f5ac28c93f495c}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity@{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity}!Serialize\+To\+Bytes@{Serialize\+To\+Bytes}}
+\index{Serialize\+To\+Bytes@{Serialize\+To\+Bytes}!Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity@{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity}}
+\subsubsection{\texorpdfstring{Serialize\+To\+Bytes()}{SerializeToBytes()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Ximmerse.\+Rhino\+X.\+Runtime\+Calibration\+Entity.\+Serialize\+To\+Bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Serialize the data of this entity to byte\mbox{[}\mbox{]} 
+
+\begin{DoxyReturn}{Returns}
+The to bytes.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a788798ab8698e05b46da74e84ebfbf14}\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a788798ab8698e05b46da74e84ebfbf14}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity@{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity}!Update\+Calibration@{Update\+Calibration}}
+\index{Update\+Calibration@{Update\+Calibration}!Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity@{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity}}
+\subsubsection{\texorpdfstring{Update\+Calibration()}{UpdateCalibration()}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+Runtime\+Calibration\+Entity.\+Update\+Calibration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity}{Runtime\+Calibration\+Entity}}}]{other }\end{DoxyParamCaption})}
+
+
+
+Updates the calibration. 更新对另一个已经标定的对象的标定数据. 要求 other 在调用此方法的时候可见。 返回一个 代表标定完成度的 normalized 的值。 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Other.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a4089f89a884f71bd451b27d38ab978d0}\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_a4089f89a884f71bd451b27d38ab978d0}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity@{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity}!Is\+Calibrated@{Is\+Calibrated}}
+\index{Is\+Calibrated@{Is\+Calibrated}!Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity@{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity}}
+\subsubsection{\texorpdfstring{Is\+Calibrated}{IsCalibrated}}
+{\footnotesize\ttfamily bool Ximmerse.\+Rhino\+X.\+Runtime\+Calibration\+Entity.\+Is\+Calibrated\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether this T\+:\+Runtime\+Calibration\+Entry is calibrated. 
+
+{\ttfamily true} if is calibrated; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_ad9cfbd99981ebb2a69e1c5e8d6f5c92d}\label{class_ximmerse_1_1_rhino_x_1_1_runtime_calibration_entity_ad9cfbd99981ebb2a69e1c5e8d6f5c92d}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity@{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity}!Is\+Tracked@{Is\+Tracked}}
+\index{Is\+Tracked@{Is\+Tracked}!Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity@{Ximmerse\+::\+Rhino\+X\+::\+Runtime\+Calibration\+Entity}}
+\subsubsection{\texorpdfstring{Is\+Tracked}{IsTracked}}
+{\footnotesize\ttfamily bool Ximmerse.\+Rhino\+X.\+Runtime\+Calibration\+Entity.\+Is\+Tracked\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether this T\+:\+Runtime\+Calibration\+Entry is tracked. 
+
+{\ttfamily true} if is tracked; otherwise, {\ttfamily false}.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+L\+A\+P\+I/\+Public/\+Calibration/Runtime\+Calibration\+Entity.\+cs\end{DoxyCompactItemize}

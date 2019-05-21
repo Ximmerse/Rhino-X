@@ -1,0 +1,146 @@
+\hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller}{}\section{Ximmerse.\+Rhino\+X.\+R\+X\+Controller Class Reference}
+\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller}\index{Ximmerse.\+Rhino\+X.\+R\+X\+Controller@{Ximmerse.\+Rhino\+X.\+R\+X\+Controller}}
+
+
+High level S\+DK script for developers to access controller data and event, e.\+g. buttons, gyroscopes, finger point over touch-\/pad.  
+
+
+Inheritance diagram for Ximmerse.\+Rhino\+X.\+R\+X\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ximmerse_1_1_rhino_x_1_1_r_x_controller}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_1_1_controller_button_event}{Controller\+Button\+Event}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a89fb2bd2521d43205645fb6b205ddbcf}{Is\+Tap}} (\mbox{\hyperlink{namespace_ximmerse_1_1_rhino_x_a99f73f11bba9d4b424daba6c5a5abc0b}{Controller\+Button\+Code}} button)
+\begin{DoxyCompactList}\small\item\em Is user taping the specific button ? \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_aa9d23fdcda8d7e24e342c26e5b8d6b27}{Is\+Press}} (\mbox{\hyperlink{namespace_ximmerse_1_1_rhino_x_a99f73f11bba9d4b424daba6c5a5abc0b}{Controller\+Button\+Code}} button)
+\begin{DoxyCompactList}\small\item\em Is user current holding the button down ? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a0a0b1610bfceaf7fa12aa7c77d86e79a}\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a0a0b1610bfceaf7fa12aa7c77d86e79a}} 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_1_1_controller_button_event}{Controller\+Button\+Event}} {\bfseries On\+Key\+Down} = new \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_1_1_controller_button_event}{Controller\+Button\+Event}}()
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a07521aeb769bd91e46f43844c2191c6d}\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a07521aeb769bd91e46f43844c2191c6d}} 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_1_1_controller_button_event}{Controller\+Button\+Event}} {\bfseries On\+Tap} = new \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_1_1_controller_button_event}{Controller\+Button\+Event}}()
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_afc517f2529c9294a037562763c0088ef}\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_afc517f2529c9294a037562763c0088ef}} 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_1_1_controller_button_event}{Controller\+Button\+Event}} {\bfseries On\+Key\+Up} = new \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_1_1_controller_button_event}{Controller\+Button\+Event}}()
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a2857dbbb67e691e9c441af16e622a77b}\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a2857dbbb67e691e9c441af16e622a77b}} 
+\mbox{\hyperlink{struct_ximmerse_1_1_rhino_x_1_1_controller_gyroscope}{Controller\+Gyroscope}} {\bfseries gyroscope} = new \mbox{\hyperlink{struct_ximmerse_1_1_rhino_x_1_1_controller_gyroscope}{Controller\+Gyroscope}}()
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_af0f42078b3ae1b984bc9cba98e0571e5}\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_af0f42078b3ae1b984bc9cba98e0571e5}} 
+bool {\bfseries Debug\+Log}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_ximmerse_1_1_rhino_x_a78c4d1657dc299dc9f91fad0ef234666}{Controller\+Index}} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a74749f7219b9eca23f4540de4c98fc48}{Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the index the controller that this instance pairs to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_raycaster}{R\+X\+Raycaster}} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a777648a528c40d7221682ba898562c95}{raycaster}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the raycaster that this controller bounds to. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_ac7f62ba234dae32195cd95530a8e2879}{Has\+Touch\+Pad\+Point}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When using \mbox{\hyperlink{namespace_ximmerse}{Ximmerse}} flip controller, this properties indicates if player has finger down on touch pad. \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_ae9a2c7113e7cdc7d802b500d628a2c1c}{Touch\+Pad\+Point}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the touch pad pointer value, when Has\+Touch\+Pad\+Point = true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+High level S\+DK script for developers to access controller data and event, e.\+g. buttons, gyroscopes, finger point over touch-\/pad. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_aa9d23fdcda8d7e24e342c26e5b8d6b27}\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_aa9d23fdcda8d7e24e342c26e5b8d6b27}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}!Is\+Press@{Is\+Press}}
+\index{Is\+Press@{Is\+Press}!Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}}
+\subsubsection{\texorpdfstring{Is\+Press()}{IsPress()}}
+{\footnotesize\ttfamily bool Ximmerse.\+Rhino\+X.\+R\+X\+Controller.\+Is\+Press (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ximmerse_1_1_rhino_x_a99f73f11bba9d4b424daba6c5a5abc0b}{Controller\+Button\+Code}}}]{button }\end{DoxyParamCaption})}
+
+
+
+Is user current holding the button down ? 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if press was ised, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em button} & Button.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a89fb2bd2521d43205645fb6b205ddbcf}\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a89fb2bd2521d43205645fb6b205ddbcf}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}!Is\+Tap@{Is\+Tap}}
+\index{Is\+Tap@{Is\+Tap}!Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}}
+\subsubsection{\texorpdfstring{Is\+Tap()}{IsTap()}}
+{\footnotesize\ttfamily bool Ximmerse.\+Rhino\+X.\+R\+X\+Controller.\+Is\+Tap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ximmerse_1_1_rhino_x_a99f73f11bba9d4b424daba6c5a5abc0b}{Controller\+Button\+Code}}}]{button }\end{DoxyParamCaption})}
+
+
+
+Is user taping the specific button ? 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if tap was ised, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em button} & Button.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_ac7f62ba234dae32195cd95530a8e2879}\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_ac7f62ba234dae32195cd95530a8e2879}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}!Has\+Touch\+Pad\+Point@{Has\+Touch\+Pad\+Point}}
+\index{Has\+Touch\+Pad\+Point@{Has\+Touch\+Pad\+Point}!Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}}
+\subsubsection{\texorpdfstring{Has\+Touch\+Pad\+Point}{HasTouchPadPoint}}
+{\footnotesize\ttfamily bool Ximmerse.\+Rhino\+X.\+R\+X\+Controller.\+Has\+Touch\+Pad\+Point\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+When using \mbox{\hyperlink{namespace_ximmerse}{Ximmerse}} flip controller, this properties indicates if player has finger down on touch pad. 
+
+{\ttfamily true} if has touch point; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a74749f7219b9eca23f4540de4c98fc48}\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a74749f7219b9eca23f4540de4c98fc48}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}!Index@{Index}}
+\index{Index@{Index}!Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}}
+\subsubsection{\texorpdfstring{Index}{Index}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_ximmerse_1_1_rhino_x_a78c4d1657dc299dc9f91fad0ef234666}{Controller\+Index}} Ximmerse.\+Rhino\+X.\+R\+X\+Controller.\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the index the controller that this instance pairs to. 
+
+The index.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a777648a528c40d7221682ba898562c95}\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_a777648a528c40d7221682ba898562c95}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}!raycaster@{raycaster}}
+\index{raycaster@{raycaster}!Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}}
+\subsubsection{\texorpdfstring{raycaster}{raycaster}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_r_x_raycaster}{R\+X\+Raycaster}} Ximmerse.\+Rhino\+X.\+R\+X\+Controller.\+raycaster\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the raycaster that this controller bounds to. 
+
+The raycaster.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_ae9a2c7113e7cdc7d802b500d628a2c1c}\label{class_ximmerse_1_1_rhino_x_1_1_r_x_controller_ae9a2c7113e7cdc7d802b500d628a2c1c}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}!Touch\+Pad\+Point@{Touch\+Pad\+Point}}
+\index{Touch\+Pad\+Point@{Touch\+Pad\+Point}!Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller@{Ximmerse\+::\+Rhino\+X\+::\+R\+X\+Controller}}
+\subsubsection{\texorpdfstring{Touch\+Pad\+Point}{TouchPadPoint}}
+{\footnotesize\ttfamily Vector2 Ximmerse.\+Rhino\+X.\+R\+X\+Controller.\+Touch\+Pad\+Point\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the touch pad pointer value, when Has\+Touch\+Pad\+Point = true. 
+
+The touch pad point.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+L\+A\+P\+I/\+Public/\+Event\+System/R\+X\+Controller.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{class_ximmerse_1_1_rhino_x_1_1_overlay}{}\section{Ximmerse.\+Rhino\+X.\+Overlay Class Reference}
+\label{class_ximmerse_1_1_rhino_x_1_1_overlay}\index{Ximmerse.\+Rhino\+X.\+Overlay@{Ximmerse.\+Rhino\+X.\+Overlay}}
+
+
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_overlay}{Overlay}} \+: scripts for overlay rendering.  
+
+
+Inheritance diagram for Ximmerse.\+Rhino\+X.\+Overlay\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ximmerse_1_1_rhino_x_1_1_overlay}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_overlay_a4fffeab006cc47fe53a3dbe2a4df7331}{Reset\+Overlay\+Clips}} ()
+\begin{DoxyCompactList}\small\item\em Resets the overlay clips rect to full screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Texture \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_overlay_a33625bf90415d02965199b48bbaec4cc}{Image\+Texture}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the image texture for overlay rendering. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_overlay_a146fe73ef50033f83d4eac7354dded8e}{Image\+Transform}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the image transform for overlay rendering binds to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_overlay}{Overlay}} \+: scripts for overlay rendering. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_overlay_a4fffeab006cc47fe53a3dbe2a4df7331}\label{class_ximmerse_1_1_rhino_x_1_1_overlay_a4fffeab006cc47fe53a3dbe2a4df7331}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Overlay@{Ximmerse\+::\+Rhino\+X\+::\+Overlay}!Reset\+Overlay\+Clips@{Reset\+Overlay\+Clips}}
+\index{Reset\+Overlay\+Clips@{Reset\+Overlay\+Clips}!Ximmerse\+::\+Rhino\+X\+::\+Overlay@{Ximmerse\+::\+Rhino\+X\+::\+Overlay}}
+\subsubsection{\texorpdfstring{Reset\+Overlay\+Clips()}{ResetOverlayClips()}}
+{\footnotesize\ttfamily void Ximmerse.\+Rhino\+X.\+Overlay.\+Reset\+Overlay\+Clips (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the overlay clips rect to full screen. 
+
+clip\+Lower\+Left = new Vector4(-\/1, -\/1, 0, 1); clip\+Upper\+Left = new Vector4(-\/1, 1, 0, 1); clip\+Upper\+Right = new Vector4(1, 1, 0, 1); clip\+Lower\+Right = new Vector4(1, -\/1, 0, 1);
+
+uv\+Lower\+Left = new Vector2(0, 0); uv\+Upper\+Left = new Vector2(0, 1); uv\+Upper\+Right = new Vector2(1, 1); uv\+Lower\+Right = new Vector2(1, 0);
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_overlay_a33625bf90415d02965199b48bbaec4cc}\label{class_ximmerse_1_1_rhino_x_1_1_overlay_a33625bf90415d02965199b48bbaec4cc}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Overlay@{Ximmerse\+::\+Rhino\+X\+::\+Overlay}!Image\+Texture@{Image\+Texture}}
+\index{Image\+Texture@{Image\+Texture}!Ximmerse\+::\+Rhino\+X\+::\+Overlay@{Ximmerse\+::\+Rhino\+X\+::\+Overlay}}
+\subsubsection{\texorpdfstring{Image\+Texture}{ImageTexture}}
+{\footnotesize\ttfamily Texture Ximmerse.\+Rhino\+X.\+Overlay.\+Image\+Texture\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the image texture for overlay rendering. 
+
+The image texture.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_overlay_a146fe73ef50033f83d4eac7354dded8e}\label{class_ximmerse_1_1_rhino_x_1_1_overlay_a146fe73ef50033f83d4eac7354dded8e}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Overlay@{Ximmerse\+::\+Rhino\+X\+::\+Overlay}!Image\+Transform@{Image\+Transform}}
+\index{Image\+Transform@{Image\+Transform}!Ximmerse\+::\+Rhino\+X\+::\+Overlay@{Ximmerse\+::\+Rhino\+X\+::\+Overlay}}
+\subsubsection{\texorpdfstring{Image\+Transform}{ImageTransform}}
+{\footnotesize\ttfamily Transform Ximmerse.\+Rhino\+X.\+Overlay.\+Image\+Transform\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the image transform for overlay rendering binds to. 
+
+The image texture.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+L\+A\+P\+I/\+Public/Overlay.\+cs\end{DoxyCompactItemize}

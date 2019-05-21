@@ -1,0 +1,211 @@
+\hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane}{}\section{Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane Class Reference}
+\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane}\index{Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane@{Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane}}
+
+
+Composite ground plane \+: composite of multiple ground plane to align the head pose. Composite ground plane should be singleton in your scene.  
+
+
+Inheritance diagram for Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfd}{Recenter\+Mode}} \{ \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfdae7052705ca5b1918757966609990e511}{Recenter\+Mode.\+Everyframe}} = 0, 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfda8fcbeb1464e18e07dc95e57674102532}{Recenter\+Mode.\+Fixed\+Interval}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Recenter behaviour mode. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33}{Data\+Source\+Type}} \{ \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33ae2d63d195b2bce9c8d5bf797a268bcec}{Data\+Source\+Type.\+File\+System}} = 1, 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33af7dfd8b8613e5e20246ac81566cf8d5e}{Data\+Source\+Type.\+Embed\+Object}} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Text\+Asset \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a63ac9972defc6a1f312432e742d99f5d}{Calibration\+File}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the calibration file , which should be a text asset object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_af02c87df8dd7b1fd6a3dc1bfdd221754}{calibration\+File\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the calibration file path. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a7aaaeb179ceb4f9fcdc59c4880d401c5}{Motherboard\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the center ground plane identifier, which is trackable\+Identity component\textquotesingle{}s id. \end{DoxyCompactList}\item 
+int \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_ab552f26590987a0d45b84f0b05ca6a03}{Children\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the children ground planes identifier. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a0c19ad531b87d3b3cd8f91f018339a41}{Tilt\+Euler}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the euler tilt. The world rotation of ground plane can be adjusted by this euler. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a7246973f95874588d8e595abfb5dce6c}{V\+P\+U\+Frame\+Delay}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the delay time from rendering to V\+PU. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a6f2c6a9d77578f52a3c58f2ddf29baff}{Min\+Error\+Head\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The minimum error head span. 对齐时候允许头部对齐动作的最小距离. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33}{Data\+Source\+Type}} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a0140c3a8715e4ed1593aedec25877761}{Data\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the type of the calibration data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aa56ba0b32c49f7cbb9132570d80276df}{Debug\+View}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether this T\+:\+Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane debug view. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfd}{Recenter\+Mode}} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_ab3d601569c3bd22ab80d6ebf38f85c49}{recenter\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the recenter mode. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_acf419166400b8b26286ec73097dd7ee8}{Min\+Error\+Head\+Diff\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the minimum error head diff angle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Composite ground plane \+: composite of multiple ground plane to align the head pose. Composite ground plane should be singleton in your scene. 
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Data\+Source\+Type@{Data\+Source\+Type}}
+\index{Data\+Source\+Type@{Data\+Source\+Type}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Data\+Source\+Type}{DataSourceType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33}{Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+Data\+Source\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{File\+System@{File\+System}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!File\+System@{File\+System}}}\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33ae2d63d195b2bce9c8d5bf797a268bcec}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33ae2d63d195b2bce9c8d5bf797a268bcec}} 
+File\+System&Read calibration file from file system path \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Embed\+Object@{Embed\+Object}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Embed\+Object@{Embed\+Object}}}\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33af7dfd8b8613e5e20246ac81566cf8d5e}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33af7dfd8b8613e5e20246ac81566cf8d5e}} 
+Embed\+Object&Use embed binray file \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfd}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfd}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Recenter\+Mode@{Recenter\+Mode}}
+\index{Recenter\+Mode@{Recenter\+Mode}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Recenter\+Mode}{RecenterMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfd}{Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+Recenter\+Mode}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Recenter behaviour mode. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Everyframe@{Everyframe}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Everyframe@{Everyframe}}}\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfdae7052705ca5b1918757966609990e511}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfdae7052705ca5b1918757966609990e511}} 
+Everyframe&Tries to recenter head everyframe, as long as the ground plane object is tracked. This is the default mode; \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fixed\+Interval@{Fixed\+Interval}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Fixed\+Interval@{Fixed\+Interval}}}\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfda8fcbeb1464e18e07dc95e57674102532}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfda8fcbeb1464e18e07dc95e57674102532}} 
+Fixed\+Interval&Try to recenter in a fixed time interval. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a63ac9972defc6a1f312432e742d99f5d}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a63ac9972defc6a1f312432e742d99f5d}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Calibration\+File@{Calibration\+File}}
+\index{Calibration\+File@{Calibration\+File}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Calibration\+File}{CalibrationFile}}
+{\footnotesize\ttfamily Text\+Asset Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+Calibration\+File\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the calibration file , which should be a text asset object. 
+
+The calibration file.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_af02c87df8dd7b1fd6a3dc1bfdd221754}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_af02c87df8dd7b1fd6a3dc1bfdd221754}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!calibration\+File\+Path@{calibration\+File\+Path}}
+\index{calibration\+File\+Path@{calibration\+File\+Path}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{calibration\+File\+Path}{calibrationFilePath}}
+{\footnotesize\ttfamily string Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+calibration\+File\+Path\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the calibration file path. 
+
+The calibration file.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_ab552f26590987a0d45b84f0b05ca6a03}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_ab552f26590987a0d45b84f0b05ca6a03}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Children\+ID@{Children\+ID}}
+\index{Children\+ID@{Children\+ID}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Children\+ID}{ChildrenID}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+Children\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the children ground planes identifier. 
+
+The children identifier.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a0140c3a8715e4ed1593aedec25877761}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a0140c3a8715e4ed1593aedec25877761}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Data\+Type@{Data\+Type}}
+\index{Data\+Type@{Data\+Type}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Data\+Type}{DataType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aeb2c4782a573590b210966a4def66f33}{Data\+Source\+Type}} Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+Data\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the type of the calibration data. 
+
+The type of the data.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aa56ba0b32c49f7cbb9132570d80276df}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_aa56ba0b32c49f7cbb9132570d80276df}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Debug\+View@{Debug\+View}}
+\index{Debug\+View@{Debug\+View}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Debug\+View}{DebugView}}
+{\footnotesize\ttfamily bool Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+Debug\+View\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether this T\+:\+Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane debug view. 
+
+{\ttfamily true} if debug view; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_acf419166400b8b26286ec73097dd7ee8}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_acf419166400b8b26286ec73097dd7ee8}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Min\+Error\+Head\+Diff\+Angle@{Min\+Error\+Head\+Diff\+Angle}}
+\index{Min\+Error\+Head\+Diff\+Angle@{Min\+Error\+Head\+Diff\+Angle}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Min\+Error\+Head\+Diff\+Angle}{MinErrorHeadDiffAngle}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+Min\+Error\+Head\+Diff\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the minimum error head diff angle. 
+
+The minimum error head diff angle.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a6f2c6a9d77578f52a3c58f2ddf29baff}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a6f2c6a9d77578f52a3c58f2ddf29baff}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Min\+Error\+Head\+Distance@{Min\+Error\+Head\+Distance}}
+\index{Min\+Error\+Head\+Distance@{Min\+Error\+Head\+Distance}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Min\+Error\+Head\+Distance}{MinErrorHeadDistance}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+Min\+Error\+Head\+Distance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The minimum error head span. 对齐时候允许头部对齐动作的最小距离. 
+
+The minimum error head span.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a7aaaeb179ceb4f9fcdc59c4880d401c5}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a7aaaeb179ceb4f9fcdc59c4880d401c5}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Motherboard\+ID@{Motherboard\+ID}}
+\index{Motherboard\+ID@{Motherboard\+ID}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Motherboard\+ID}{MotherboardID}}
+{\footnotesize\ttfamily int Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+Motherboard\+ID\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the center ground plane identifier, which is trackable\+Identity component\textquotesingle{}s id. 
+
+The center ground plane identifier.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_ab3d601569c3bd22ab80d6ebf38f85c49}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_ab3d601569c3bd22ab80d6ebf38f85c49}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!recenter\+Mode@{recenter\+Mode}}
+\index{recenter\+Mode@{recenter\+Mode}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{recenter\+Mode}{recenterMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a04f66929fadbcaaf0d0f9c53cd856dfd}{Recenter\+Mode}} Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+recenter\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the recenter mode. 
+
+The recenter mode.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a0c19ad531b87d3b3cd8f91f018339a41}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a0c19ad531b87d3b3cd8f91f018339a41}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!Tilt\+Euler@{Tilt\+Euler}}
+\index{Tilt\+Euler@{Tilt\+Euler}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Tilt\+Euler}{TiltEuler}}
+{\footnotesize\ttfamily Vector3 Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+Tilt\+Euler\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the euler tilt. The world rotation of ground plane can be adjusted by this euler. 
+
+The euler offset.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a7246973f95874588d8e595abfb5dce6c}\label{class_ximmerse_1_1_rhino_x_1_1_composite_ground_plane_a7246973f95874588d8e595abfb5dce6c}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}!V\+P\+U\+Frame\+Delay@{V\+P\+U\+Frame\+Delay}}
+\index{V\+P\+U\+Frame\+Delay@{V\+P\+U\+Frame\+Delay}!Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Composite\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{V\+P\+U\+Frame\+Delay}{VPUFrameDelay}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+Composite\+Ground\+Plane.\+V\+P\+U\+Frame\+Delay\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the delay time from rendering to V\+PU. 
+
+The backward time.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+L\+A\+P\+I/\+Public/Composite\+Ground\+Plane.\+cs\end{DoxyCompactItemize}

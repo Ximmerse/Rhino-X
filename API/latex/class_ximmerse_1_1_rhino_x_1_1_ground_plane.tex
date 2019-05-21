@@ -1,0 +1,184 @@
+\hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane}{}\section{Ximmerse.\+Rhino\+X.\+Ground\+Plane Class Reference}
+\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane}\index{Ximmerse.\+Rhino\+X.\+Ground\+Plane@{Ximmerse.\+Rhino\+X.\+Ground\+Plane}}
+
+
+Ground plane represents static trackable object placed on environment, to reposition head pose according to the relative pose between head and trackable object.  
+
+
+Inheritance diagram for Ximmerse.\+Rhino\+X.\+Ground\+Plane\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ximmerse_1_1_rhino_x_1_1_ground_plane}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14}{Recenter\+Mode}} \{ \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14ae7052705ca5b1918757966609990e511}{Recenter\+Mode.\+Everyframe}} = 0, 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14a8fcbeb1464e18e07dc95e57674102532}{Recenter\+Mode.\+Fixed\+Interval}} = 1, 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14a7aa380179987cdf970ad4a8ac6d81d46}{Recenter\+Mode.\+First\+Tracked}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Recenter behaviour mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14}{Recenter\+Mode}} \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a9d8f6a9a11b6f928eb2312dd829ddc80}{recenter\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the recenter mode. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a038a86a7608ce2283055c64b7c29848a}{Recenter\+Interval}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the recenter interval. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a898f82c1d352c5f0749184d6fa346282}{Tilt\+Euler}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the euler tilt. The world rotation of ground plane can be adjusted by this euler. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_ad865efbe2157148db7f6ee7513b461b8}{V\+P\+U\+Frame\+Delay}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the delay time from rendering to V\+PU. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_aeb62f8cf91b1beb542a7f109ee15cc7d}{Min\+Tracked\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the minimum tracking distance to allow recenter. 可以发生对齐的最小追踪距离. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a9fdce85c8aa0f79d7a3bfd5e405690e6}{Max\+Tracked\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the max tracking distance to allow recenter. 可以发生对齐的最大追踪距离. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a17e5a8401d6fff9932ee9be50a63557d}{Min\+Error\+Head\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The minimum error head distance. 对齐时候允许头部对齐动作的最小距离. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_aae04f4e2f68e795bce517209568b90ef}{Debug\+View}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Activates or deactivate debug view. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a2b83cdffdc6141b39c695a0588b19568}{Min\+Error\+Head\+Diff\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the minimum allow head diff angle to recenter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a88437781a9762727b2cd7ea8f931bdcb}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a88437781a9762727b2cd7ea8f931bdcb}} 
+Color {\bfseries Debug\+Color\+\_\+\+Frame}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a9d37c7e36bbb00afc848ad540d2ff1e8}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a9d37c7e36bbb00afc848ad540d2ff1e8}} 
+Color {\bfseries Debug\+Color\+\_\+\+Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_af723d66a4c3fff91ef5033d667ef2436}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_af723d66a4c3fff91ef5033d667ef2436}} 
+bool {\bfseries Print\+Detail\+Tracked\+Data}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_af70f6507f27354b7e614d3a581466920}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_af70f6507f27354b7e614d3a581466920}} 
+float {\bfseries Debug\+Text\+Scale}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ground plane represents static trackable object placed on environment, to reposition head pose according to the relative pose between head and trackable object. 
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!Recenter\+Mode@{Recenter\+Mode}}
+\index{Recenter\+Mode@{Recenter\+Mode}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Recenter\+Mode}{RecenterMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14}{Ximmerse.\+Rhino\+X.\+Ground\+Plane.\+Recenter\+Mode}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Recenter behaviour mode. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Everyframe@{Everyframe}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!Everyframe@{Everyframe}}}\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14ae7052705ca5b1918757966609990e511}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14ae7052705ca5b1918757966609990e511}} 
+Everyframe&Tries to recenter head everyframe, as long as the ground plane object is tracked. This is the default mode; \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fixed\+Interval@{Fixed\+Interval}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!Fixed\+Interval@{Fixed\+Interval}}}\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14a8fcbeb1464e18e07dc95e57674102532}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14a8fcbeb1464e18e07dc95e57674102532}} 
+Fixed\+Interval&Try to recenter in a fixed time interval. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{First\+Tracked@{First\+Tracked}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!First\+Tracked@{First\+Tracked}}}\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14a7aa380179987cdf970ad4a8ac6d81d46}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14a7aa380179987cdf970ad4a8ac6d81d46}} 
+First\+Tracked&Recenter head at the first frame when the ground plane object is tracked, then never recenter again until the ground plane is lost tracked and become visible again. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_aae04f4e2f68e795bce517209568b90ef}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_aae04f4e2f68e795bce517209568b90ef}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!Debug\+View@{Debug\+View}}
+\index{Debug\+View@{Debug\+View}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Debug\+View}{DebugView}}
+{\footnotesize\ttfamily bool Ximmerse.\+Rhino\+X.\+Ground\+Plane.\+Debug\+View\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Activates or deactivate debug view. 
+
+{\ttfamily true} if debug view; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a9fdce85c8aa0f79d7a3bfd5e405690e6}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a9fdce85c8aa0f79d7a3bfd5e405690e6}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!Max\+Tracked\+Distance@{Max\+Tracked\+Distance}}
+\index{Max\+Tracked\+Distance@{Max\+Tracked\+Distance}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Max\+Tracked\+Distance}{MaxTrackedDistance}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+Ground\+Plane.\+Max\+Tracked\+Distance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the max tracking distance to allow recenter. 可以发生对齐的最大追踪距离. 
+
+The max recenter distance.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a2b83cdffdc6141b39c695a0588b19568}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a2b83cdffdc6141b39c695a0588b19568}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!Min\+Error\+Head\+Diff\+Angle@{Min\+Error\+Head\+Diff\+Angle}}
+\index{Min\+Error\+Head\+Diff\+Angle@{Min\+Error\+Head\+Diff\+Angle}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Min\+Error\+Head\+Diff\+Angle}{MinErrorHeadDiffAngle}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+Ground\+Plane.\+Min\+Error\+Head\+Diff\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the minimum allow head diff angle to recenter. 
+
+The minimum error head diff angle.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a17e5a8401d6fff9932ee9be50a63557d}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a17e5a8401d6fff9932ee9be50a63557d}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!Min\+Error\+Head\+Distance@{Min\+Error\+Head\+Distance}}
+\index{Min\+Error\+Head\+Distance@{Min\+Error\+Head\+Distance}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Min\+Error\+Head\+Distance}{MinErrorHeadDistance}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+Ground\+Plane.\+Min\+Error\+Head\+Distance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The minimum error head distance. 对齐时候允许头部对齐动作的最小距离. 
+
+The minimum error head span.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_aeb62f8cf91b1beb542a7f109ee15cc7d}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_aeb62f8cf91b1beb542a7f109ee15cc7d}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!Min\+Tracked\+Distance@{Min\+Tracked\+Distance}}
+\index{Min\+Tracked\+Distance@{Min\+Tracked\+Distance}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Min\+Tracked\+Distance}{MinTrackedDistance}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+Ground\+Plane.\+Min\+Tracked\+Distance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the minimum tracking distance to allow recenter. 可以发生对齐的最小追踪距离. 
+
+The minimum recenter distance.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a038a86a7608ce2283055c64b7c29848a}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a038a86a7608ce2283055c64b7c29848a}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!Recenter\+Interval@{Recenter\+Interval}}
+\index{Recenter\+Interval@{Recenter\+Interval}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Recenter\+Interval}{RecenterInterval}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+Ground\+Plane.\+Recenter\+Interval\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the recenter interval. 
+
+The recenter scanning interval.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a9d8f6a9a11b6f928eb2312dd829ddc80}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a9d8f6a9a11b6f928eb2312dd829ddc80}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!recenter\+Mode@{recenter\+Mode}}
+\index{recenter\+Mode@{recenter\+Mode}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{recenter\+Mode}{recenterMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a8813fd8673b953d9d9eb5e87b16cad14}{Recenter\+Mode}} Ximmerse.\+Rhino\+X.\+Ground\+Plane.\+recenter\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the recenter mode. 
+
+The recenter mode.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a898f82c1d352c5f0749184d6fa346282}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_a898f82c1d352c5f0749184d6fa346282}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!Tilt\+Euler@{Tilt\+Euler}}
+\index{Tilt\+Euler@{Tilt\+Euler}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{Tilt\+Euler}{TiltEuler}}
+{\footnotesize\ttfamily Vector3 Ximmerse.\+Rhino\+X.\+Ground\+Plane.\+Tilt\+Euler\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the euler tilt. The world rotation of ground plane can be adjusted by this euler. 
+
+The euler offset.\mbox{\Hypertarget{class_ximmerse_1_1_rhino_x_1_1_ground_plane_ad865efbe2157148db7f6ee7513b461b8}\label{class_ximmerse_1_1_rhino_x_1_1_ground_plane_ad865efbe2157148db7f6ee7513b461b8}} 
+\index{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}!V\+P\+U\+Frame\+Delay@{V\+P\+U\+Frame\+Delay}}
+\index{V\+P\+U\+Frame\+Delay@{V\+P\+U\+Frame\+Delay}!Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane@{Ximmerse\+::\+Rhino\+X\+::\+Ground\+Plane}}
+\subsubsection{\texorpdfstring{V\+P\+U\+Frame\+Delay}{VPUFrameDelay}}
+{\footnotesize\ttfamily float Ximmerse.\+Rhino\+X.\+Ground\+Plane.\+V\+P\+U\+Frame\+Delay\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the delay time from rendering to V\+PU. 
+
+The backward time.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+H\+L\+A\+P\+I/\+Public/Ground\+Plane.\+cs\end{DoxyCompactItemize}
