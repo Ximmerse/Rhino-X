@@ -1,0 +1,10 @@
+{
+	"CARD_GROUP":
+	{
+		"CalibFile": "91-BC301011105115J113.dat",
+		"ModeType": "CONTROLLER",
+		"GroupID": 81,
+		"Markers": [0, 5, 7, 10],
+		"MarkersSize": [0.04, 0.04, 0.04, 0.04]
+	}
+}

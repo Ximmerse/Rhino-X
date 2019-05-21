@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1145382884, guid: 0f0a52caadf1d4e05868e818a57c7f2c, type: 3}
+  m_Name: TrackingProfile-Beacon
+  m_EditorClassIdentifier: 
+  Description: 
+  items:
+  - JSONConfig: {fileID: 102900000, guid: 7b2995b55de4e488b8ba40b59e9c5ebf, type: 3}
+    jsonName: BEACON-500.json
+    jsonContent: 

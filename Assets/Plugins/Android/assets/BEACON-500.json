@@ -1,0 +1,8 @@
+{
+    "CARD_SINGLE":
+    {
+        "CalibFile": "BEACON-500.dat",
+        "Markers": [65,66,67],
+        "MarkersSize": [0.15,0.15,0.15]
+    }
+}

@@ -1,0 +1,11 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Demo/Deer-Island/Deer-Island.unity
+    guid: 1f76b32d4b2fd412e8a27632e688bec4
+  m_configObjects: {}
