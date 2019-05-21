@@ -10,6 +10,5 @@ var searchData=
   ['trackingitems',['TrackingItems',['../class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile_1_1_tracking_items.html',1,'Ximmerse.RhinoX.ObjectTrackingProfile.TrackingItems'],['../class_ximmerse_1_1_rhino_x_1_1_object_tracking_profile.html#ad9d2e13ef6fdf8e901f7ee53cf42a7d3',1,'Ximmerse.RhinoX.ObjectTrackingProfile.trackingItems()']]],
   ['trackingprofile',['TrackingProfile',['../class_ximmerse_1_1_rhino_x_1_1_a_r_camera.html#a3abfd51c012cf14af414f4c7df72de66',1,'Ximmerse::RhinoX::ARCamera']]],
   ['trackposition',['TrackPosition',['../class_ximmerse_1_1_rhino_x_1_1_a_r_camera.html#a6374e45b33643924d3aa0c3e32360d73',1,'Ximmerse::RhinoX::ARCamera']]],
-  ['trackrotation',['TrackRotation',['../class_ximmerse_1_1_rhino_x_1_1_a_r_camera.html#ae2c6be1c7856874b2f66961adb1536ae',1,'Ximmerse::RhinoX::ARCamera']]],
-  ['triplegroundplane',['TripleGroundPlane',['../class_ximmerse_1_1_rhino_x_1_1_triple_ground_plane.html',1,'Ximmerse::RhinoX']]]
+  ['trackrotation',['TrackRotation',['../class_ximmerse_1_1_rhino_x_1_1_a_r_camera.html#ae2c6be1c7856874b2f66961adb1536ae',1,'Ximmerse::RhinoX::ARCamera']]]
 ];

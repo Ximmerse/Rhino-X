@@ -23,9 +23,9 @@ for the JavaScript code in this file
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
-{text:"Packages",url:"namespaces.html",children:[
-{text:"Packages",url:"namespaces.html"},
-{text:"Package Functions",url:"namespacemembers.html",children:[
+{text:"Namespaces",url:"namespaces.html",children:[
+{text:"Namespace List",url:"namespaces.html"},
+{text:"Namespace Members",url:"namespacemembers.html",children:[
 {text:"All",url:"namespacemembers.html"},
 {text:"Enumerations",url:"namespacemembers_enum.html"}]}]},
 {text:"Classes",url:"annotated.html",children:[
