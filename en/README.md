@@ -1,7 +1,7 @@
-目 录 {#目-录 .TOC}
+目 录
 =====
 
-[[1.]{.underline} [系统说明]{.underline} 3](#_Toc7362647)
+[[System Introduction]](#system-introduction)
 
 [[2.]{.underline} [设备特性]{.underline} 3](#_Toc7362648)
 
@@ -15,7 +15,7 @@
 
 [[7.]{.underline} [进阶功能说明]{.underline} 7](#_Toc7362653)
 
-1.  []{#_Toc7362647 .anchor}系统说明
+#System Introduction
 
 > Wonderland系统是一套三维立体应用交互系统，包括头戴显示设备和可自定义交互设备。
 >
