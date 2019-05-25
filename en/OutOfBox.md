@@ -13,18 +13,17 @@
 2.	Try the HMD on. If the pre-installed head foam is too large, replace it with the smaller foam in the box.
 3.	Remove the lens from the box, and place the lens on the HMD. The lens will be hold by magnetic force. 
 4.	Remove the controller from the box, and then remove the battery contact stopper from the controller. Then place the controller in the 6dof controller case.
-5.	Remove the beacon from the box，放置于桌面上或地上，以适配不同的应用。
-6.	如果头显电量不足，可使用充电器和充电线（Type C），对头显进行充电。
-7.	如果需要通过PC连接HMD，可以使用充电线（Type C）作为数据线，进行PC端的连接。
-8.	配置好硬件设备，即可以启动HMD，进入软件系统使用。
-9.	进入系统后，开启相应的应用，即可以将HMD配戴到头部，通过头戴旋扭，调整HMD的位置，以适应眼睛的视野。
-10.	HMD的具体的接口功能如下图所示。
+5.	Remove the beacon from the box，and then place the beacon on a desk or on ground based on desired applications.
+6.	If the HMD is low on battery power, please use Type-C cable to charge the HMD.
+7.	If PC to HMD connection is needed, the charging type-C cable can be used to estabilish the connection.
+8.	Once hardware is properly configurated, you can turn on the HMD and enter the operating system.
+9.	Once you enter the operating system, you can start desired application and wear the HMD on your head. 
+10.	The following image describs the functionalities provided on the HMD:
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Rhino-X-HMD.png ':size=750X600')
 
 
-# 启动 Rhino-X 头显
+# Turn on Rhino-X
 
-长按开机按钮3秒启动HMD，经过系统自检后，自动进入Launcher界面。
+Press and hold HMD power button for 3 seconds to start the device.
 
-> 具体的硬件工作状态的转换关系，如图3所示
