@@ -1,31 +1,30 @@
 
 
-进入到Launcher后，可以通过Launcher，对系统各主要功能进行使用和配置管理，Launcher有两种模式，头瞄模式和手柄操控模式，
-在没有手柄连接的情况，可以使用头瞄，选择Launcher中的图标，通过短按确认按钮进行确认，通过Home按钮回到Home界面。
-在有连接手柄的情况下，可以通过按钮下左手柄或右手柄的扳机，进入手柄操控模式，手柄操控模式下，头瞄模式会被屏蔽。具体与开发相关的功能介绍如下：
+Launcher app is used to configurate the system and connected devices. There are 2 interaction mode in launcher app, gaze aiming mode and controller aiming mode. 
 
-1.	应用的查看、打开、卸载
-在Launcher界面中心，有一个应用显示区域，可以选择显示在HMD前面的左右图标，进行不同应用的切换，
-应用在安装到系统内后，即会在应用区域显示；通过单击图标进行应用的打开；长按图标，会弹出卸载按钮，可以单点按扭进行应用的卸载。
-2.	WiFi、蓝牙功能的配置和使用
-在Launcher的WiFi和蓝牙的使用方式，可以通过头瞄或手柄的方式，选择功能按钮进行开关。
-WiFi功能打开后，会显示搜索到的WiFi热点，点击需要加入的WiFi热点，如果无密码，则加入WiFi，如果需要密码，
-则弹出虚拟键盘进行输入，点击确认后，加入该WiFi，对于已连接的WiFi，点击后，会出现遗忘的按钮，可按该按钮进行WiFi遗忘。
-同理，蓝牙的配对过程，如果无需输入密码，只需要正常配对，则直接连接；如果需要输入密码，则输入密码后进行配对连接。
+When there is no controller device connected, user will be able to interact the launcher UI with gaze aiming and buttons on the HMD.
 
-3.	设备管理功能的配置和使用
-Launcher的设备管理功能包括设备的配对、连接、使用和遗忘。Wonderland的设备包括左右手柄Controller、Cube控制器、TouchPad等。
-Launcher的设备配对采用设备类型配对和按钮配对方式实现设备的自动配对连接。
-Launcher进入配对界面，点击所需要配对的设备，例如左手柄配对、右手柄配对、Cube配对等。
-点击后，系统进入配对模式，与此同时，通过同时点击手柄上的两个按扭，系统在检测到手柄按扭事件后，自动进行手柄的配对；
-手柄在配对成功后，系统会自动连接手柄。按下扳机，即可实现手柄操控Launcher的功能。如果想连接同种类型的其它手柄，
-需要先遗忘先前的手柄，在Launcher中，点击已连接手柄的图标，会出现遗忘的按扭，点击后会立即断开连接，删除选中的手柄配对文件，可以重新进行配对连接。
+When there is a controller connected, user can activate controller aiming mode by pushing trigger button. The gaze aiming mode is disabled when controller aiming mode is activated. 
+
+Here is a list of frequently used features for development:
+
+1. Application Opening and Uninstallation:	
+In Launcher main UI, there is an application list. Users can click on the application in the list to launch the application, or long hold on the icon to un-install the application.
+
+2.	WiFi, Bluetooth Configuration:	
+User can launch the Wifi and Bluetooth config panel in the launcher app main menu.
+Wifi connecting and Bluetooth pairing process are very similar to that on smart phones. 
+
+3.	Device Manager and Configurations:	
+Launcher device manager manages device paring, connectivity, and disconnection. RhinoX includes a wide range of input devices, such as tag controller, cube controller and touchpad controllers. 
+The device manager will automatically pair the devices depending on the configuration.
+Go to pairing menu, click on the devices you would like to pair, such as left or right controller, or a cube controller.
+Once pairing button is clicked, the system will search for target devices; user will be required to push 2 buttons on controllers in order to have the controllers paired. 
+Once controller is connected, user can activate the controler aiming mode in launcher by push trigger button.
+If users need to have RhinoX to forget paired controllers, they can click on paired devices, and then click "Forget" button to unpair the controller.
 			
-4.	系统资源更新功能
-系统资源更新包括Rom更新、VPU更新。对于Rom更新，有新的更新，系统会弹出Rom可更新的按钮，
-点击该按钮后，系统会直接下载Rom的Update Patch，并进行OTA系统更新。VPU有更新时，
-系统会弹出VPU可更新的按钮，点击该按钮，系统会下载VPU更新包，进行VPU更新。
+4. System Update:	
+The system update typically updates the VPU and system rom. When system rom or VPU update is available, a system dialog will pop up. Click "Yes" to update the system.
 
-3.3 应用说明
-应用APP开发好后，通过USB线和ADB工具（另外可以使用Visor），将APP安装到该系统中，安装完成后会在应用显示界面中显示相应的应用图标。
-由于不同的应用所需要的权限不一致，需要通过系统权限配置去配置应用的权限，直接通过Visor使用系统的权限配置方法。
+5. Application:		
+When application is deployed on the device, users may need to setup application permissions. We recommend using a PC software, Visor, to config the application permissions.
