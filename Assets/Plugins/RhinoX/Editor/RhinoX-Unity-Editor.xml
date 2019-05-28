@@ -4,9 +4,19 @@
         <name>RhinoX-Unity-Editor</name>
     </assembly>
     <members>
-        <member name="T:Ximmerse.RhinoX.AIOSDKMenu">
+        <member name="T:Ximmerse.RhinoX.ARCameraInspector">
              <summary>
-             AIO SDK unity editor menu.
+             ARC amera inspector.
+             </summary>
+            </member>
+        <member name="T:Ximmerse.RhinoX.RXSDKMenu">
+             <summary>
+             RhinoX SDK unity editor menu.
+             </summary>
+            </member>
+        <member name="T:Ximmerse.RhinoX.TrackableIdentityInspector">
+             <summary>
+             Trackable identity inspector.
              </summary>
             </member>
         <member name="T:Ximmerse.RhinoX.TrackedObjectJsonEditor">
