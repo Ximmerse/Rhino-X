@@ -10,5 +10,6 @@
   - [控制器](Controller.md)
   - [使用Beacon定义地面](GroundPlane.md) 
 - [API](API.md)
+- [ChangeLog](changelog.md)
 
 
