@@ -9,14 +9,56 @@
              ARC amera inspector.
              </summary>
             </member>
+        <member name="T:Ximmerse.RuntimeCalibration.CalibrationLayoutInspector">
+             <summary>
+             Calibration layout inspector.
+             </summary>
+            </member>
         <member name="T:Ximmerse.RhinoX.RXSDKMenu">
              <summary>
              RhinoX SDK unity editor menu.
              </summary>
             </member>
+        <member name="T:Ximmerse.RhinoX.RxEventTriggerEditor">
+             <summary>
+             Rx event trigger editor.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.RxEventTriggerEditor.kMenuItem_RxButtons">
+             <summary>
+             Menu items for Rx side-buttons
+             </summary>
+            </member>
+        <member name="M:Ximmerse.RhinoX.RxEventTriggerEditor.isEventPresented(Ximmerse.RhinoX.EventTriggerType)">
+             <summary>
+             Is the event type presents in the event entry list ?
+             </summary>
+             <returns><c>true</c>, if event presented was ised, <c>false</c> otherwise.</returns>
+             <param name="EventId">Event identifier.</param>
+            </member>
         <member name="T:Ximmerse.RhinoX.TrackableIdentityInspector">
              <summary>
              Trackable identity inspector.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackableIdentityInspector.TrackableID_Beacon01">
+             <summary>
+             The beacon 01's trackable ID.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackableIdentityInspector.TrackableID_Beacon02">
+             <summary>
+             The beacon 02's trackable ID.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackableIdentityInspector.TrackableID_Beacon03">
+             <summary>
+             The beacon 03's trackable ID.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackableIdentityInspector.TrackableID_MainController">
+             <summary>
+             The default controller's trackable ID
              </summary>
             </member>
         <member name="T:Ximmerse.RhinoX.TrackedObjectJsonEditor">

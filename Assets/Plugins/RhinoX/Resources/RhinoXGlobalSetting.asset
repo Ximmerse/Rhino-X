@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1172385442, guid: 0f0a52caadf1d4e05868e818a57c7f2c, type: 3}
+  m_Name: RhinoXGlobalSetting
+  m_EditorClassIdentifier: 
+  DebugDrawShader: {fileID: 4800000, guid: fba0ab46acacf45b0b947f1bffaef0d9, type: 3}
+  FrustumNear: 0.1
+  FrustumFar: 1000
+  FrustumLeft: -0.07968502
+  FrustumRight: 0.07968502
+  FrustumTop: 0.07968502
+  FrustumBottom: -0.07968502
+  m_DefaultRectile: {fileID: 2800000, guid: d20c0a611620a41a7a5ead7663af6f52, type: 3}
+  m_QuitWhenLongHoldHomeButton: 1
