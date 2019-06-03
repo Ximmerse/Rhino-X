@@ -1,6 +1,6 @@
-# About SDK
+# About RhinoX SDK
 
-* Android 7.1
+* Supports Android 7.1 or above
 * Built with Qualcomm SVR SDK 3.0
 * Stereoscopic Rendering
 * Asynchronous TimeWarp

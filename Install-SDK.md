@@ -13,9 +13,9 @@
 ![Plugins/Android Folder:](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Plugins-Android-Folder.png)
 
 
-* AndroidManifest.xml - 此文件定义RhinoX所必须的权限请求，开发者不应该修改此文件。
+* AndroidManifest.xml - 此文件定义RhinoX所必须的所有权限请求，开发者不可修改此权限需求。
 
-* Plugins/Android/assets 目录： 所有可追踪物体的标定文件(*.json 和 *.dat文件) 必须被存放在此路径中。
+* Plugins/Android/assets 目录： 所有可追踪物体的标定文件(json 和 dat文件) 必须被存放在此路径中。
 `Plugins/Android/assets 内的实际内容可能和此图有不同。` 
 
 * Plugins/Android/res 目录： 存放usb权限请求文件。
@@ -25,13 +25,13 @@
 
 ![Plugins/RhinoX Folder:](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Plugins-RhinoX-Folder.png)
 
-此文件夹封装所有必须的代码库，用户不应该去修改和移动此文件夹内的所有文件。
+此文件夹封装所有必须的代码库，用户不应该去修改和移动此文件夹内的所有文件。这些代码库是视觉算法的核心文件，缺一不可。
 
 
 
 ## Ximmerse-Assets 文件夹
 
-此文件夹包含有 Ximmerse 的设备3D模型。
+此文件夹包含有 Ximmerse 的设备3D模型。这些模型是RhinoX常用交互设备的3D模型。
 
 
 !> 开发者可以直接把上述文件直接拷贝到自己的项目中。

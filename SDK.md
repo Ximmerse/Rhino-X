@@ -1,6 +1,6 @@
-# 关于 SDK
+# Rhino-X SDK
 
-* Android 7.1
+* 基于Android 7.1
 * 基于 Qualcomm SVR SDK 3.0
 * 双目立体渲染
 * 异步时间扭曲（Asynchronous TimeWarp）

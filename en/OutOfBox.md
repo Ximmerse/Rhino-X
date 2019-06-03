@@ -4,10 +4,9 @@
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Rhino-X-Package-01.png ':size=450X400')
 
 	
-	Items in Box：HMD, free-form lenses, beacon and controller.
-	Accessories, charger, charging cable, forehead foam, cleaning cloth and user manual, are included.
-	The system supports additional customizable input devices, which can be purchased separately.
+Items in Box：HMD, free-form lenses, beacon and controller. Accessories include charger, charging cable, forehead foam, cleaning cloth and user manual. The system supports additional customizable input devices, which can be purchased separately.
 
+Once you get the development kit, please go through the following steps to ensure you have all the items:
 
 1.	Open the box and the item listed above are all in the box.
 2.	Try the HMD on. If the pre-installed head foam is too large, replace it with the smaller foam in the box.
