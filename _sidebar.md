@@ -10,6 +10,7 @@
   - [控制器](Controller.md)
   - [使用Beacon定义地面](GroundPlane.md) 
 - [API](API.md)
+- [编程指引](ScriptingReference.md)
+  - [ARCamera](ScriptingReference-ARCamera.md)
 - [ChangeLog](changelog.md)
-
 
