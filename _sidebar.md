@@ -11,6 +11,8 @@
   - [使用Beacon定义地面](GroundPlane.md) 
 - [API](API.md)
 - [编程指引](ScriptingReference.md)
-  - [ARCamera](ScriptingReference-ARCamera.md)
+  - [ARCamera](ScriptingReference/ARCamera.md)
+  - [TrackableIdentity](ScriptingReference/TrackableIdentity.md)
+  - [DynamicTarget](ScriptingReference/DynamicTarget.md)
 - [ChangeLog](changelog.md)
 
