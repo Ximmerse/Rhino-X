@@ -1,12 +1,12 @@
 # Dynamic Target
 
-> 命名空间: Ximmerse.RhinoX
-
-public sealed class DynamicTarget : MonoBehaviour
+> 命名空间: Ximmerse.RhinoX      
+> public sealed class DynamicTarget : TrackableBehaviour
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/DynamicTarget.png ':size=350X300')
 
-Dynamic Target 依赖于Trackable Identity组件，用于实时更新一个追踪物体相对于用户头部的位置和朝向。
+Dynamic Target 用于实时更新一个追踪物体相对于用户头部的位置和朝向。
+
 - 当 Trackable Identity 指向一个 Beacon 的时候，Dynamic Target的轴向如下图所示:
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/photo/Beacon-Axis.jpg ':size=400X350')
 

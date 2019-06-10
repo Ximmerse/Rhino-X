@@ -1,8 +1,7 @@
 # Trackable Identity
 
-> 命名空间: Ximmerse.RhinoX
-
-public sealed class TrackableIdentity : MonoBehaviour
+> 命名空间: Ximmerse.RhinoX     
+> public sealed class TrackableIdentity : MonoBehaviour
     
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/TrackableIdentity.png ':size=450X400')
 
@@ -14,7 +13,7 @@ Trackable identity 组件通过 Trackable ID指向一个可追踪物体。
 ### 公共成员
 
 #### TrackableID
-- `public int TrackableID { get; set; };
+- `public int TrackableID { get; set; };`
 
 此属性用于设置追踪对象的ID。
 
@@ -27,7 +26,11 @@ Trackable identity 组件通过 Trackable ID指向一个可追踪物体。
  Beacon 03 = 67;
  
  主控制器 = 81;
+ 
+![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/TrackableIdentity-Target-Dropdown.jpg ':size=450X400')
 
+> 关于Custom ID : 除了标准的Beacons和Controller， RhinoX 还支持 Cube， Touch平板，Table 等物体跟踪。当使用到这些附加物体时， 就需要设置 Custom ID。
+关于如何获取这些附加追踪物，请联系[Ximmerse Support](https://www.ximmerse.com/contact)
 
 #### ActivateGameObject
 - `public bool ActivateGameObject { get; set; } `
@@ -38,7 +41,7 @@ Trackable identity 组件通过 Trackable ID指向一个可追踪物体。
 #### IsVisible
 - `public bool IsVisible { get; }`
 
-此属性指示当前对象是否正在被跟踪。
+此属性指示当前对象是否正在被跟踪。也可以通过[ObjectTracking](/ScriptingReference/ObjectTracking)的接口获取物体被跟踪的详细信息。
 
 #### OnVisibilityChange
 - `public VisiblityChangeEvent OnVisibilityChange;`

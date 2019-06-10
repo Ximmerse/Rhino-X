@@ -1,14 +1,13 @@
 # ARCamera
 
-> 命名空间: Ximmerse.RhinoX
-
-public sealed class ARCamera : MonoBehaviour
+> 命名空间: Ximmerse.RhinoX      
+> public sealed class ARCamera : MonoBehaviour
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/ARCamera.png ':size=450X400')
 
 ARCamera 代表用户头部在虚拟世界中的节点对象。ARCamera在SDK中的功能包括:
 - 跟踪用户头部运动。
-- 驱动 Tag Tracking 模组，扫描真实环境中的可追踪物体。
+- 驱动 Tag Tracking 模组，扫描现实世界中的可追踪物体。
 - 双目渲染虚拟世界。
 - 渲染准星 (Rectile)，并提供侧边栏确认键的事件接口， 以让用户方便的通过头部瞄准的方式，与Unity的可交互对象（例如 uGUI Button, Toggle）交互。
 
