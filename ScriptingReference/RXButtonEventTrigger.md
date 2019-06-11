@@ -15,7 +15,10 @@
 
 
 > 当 RXButtonEventTrigger 不与 RXController 并存在一个GameObject上时，可以注册基于侧边栏确认键的事件:
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/RxButtonEventTrigger-AddSideButtonEvents.jpg ':size=450X400')
+![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/RxButtonEventTrigger-AddSideButtonEvents.jpg ':size=450X400')    
+
+> 侧边栏确认键
+![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/photo/RxSideBarConfirmButton.jpg ':size=300X400')
 
 
 ### 公共方法
