@@ -15,7 +15,11 @@ Different from RXInput，RXController is designed to be used directly by develop
 
 
 > When RXButtonEventTrigger and RXController are not on the same GameObject, event is triggered by App Button by default:
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/RxButtonEventTrigger-AddSideButtonEvents.jpg ':size=450X400')
+![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/RxButtonEventTrigger-AddSideButtonEvents.jpg ':size=450X400')    
+
+> RhinoX HMD Side Button (Confirm Button)
+![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/photo/RxSideBarConfirmButton.jpg ':size=300X400')
+
 
 
 ### Public Methods

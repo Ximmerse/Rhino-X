@@ -1,4 +1,4 @@
-# ObjectTracking  :id=docs-ObjectTracking
+# ObjectTracking
 
 > Namespace: Ximmerse.RhinoX    
 > public static class ObjectTracking

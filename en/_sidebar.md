@@ -1,4 +1,5 @@
 - [Rhino-X](/en/README.md)
+  - [System Introduction](/en/SystemIntro.md)
   - [Hardware Spec](/en/AboutRhinoX.md)
   - [Open Box](/en/OutOfBox.md)
   - [Launcher](/en/Launcher.md)
