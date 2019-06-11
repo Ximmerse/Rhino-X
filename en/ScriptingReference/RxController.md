@@ -31,17 +31,17 @@ If the controller is connected to RhinoX successfully, this value will return tr
 #### EnableRaycasting
 `public bool EnableRaycasting { get; set; }`
 
-Controller是否支持通过射线与Unity Event System交互。 
+When this is set to true, controller can shoot a ray to interacte with Unity Event System. 
 
-!> 场景内必须有激活状态的 RxEventSystem 和 RxInputModule, RXController才能通过Unity Event System与对象交互。
+!> There must be a RxEventSystem and a RxInputModule in the scene for RXController to interact with Unity Event System.
 
 
 #### Raycast Origin
 `public Transform RaycastOrigin { get; set; }`
 
-RXController 控制器射线的锚点。 定义射线的起点和方向。起点为RaycastOrigin的Posiiton, 方向为RaycastOrigin的Forward方向。
+Use this to define RXController Ray origin.
 
-以下代码为 Raycast Origin 的内部实现:
+Raycast Origin:
 ```bash
         /// <summary>
         /// Gets or sets the raycast origin transform.
@@ -61,8 +61,8 @@ RXController 控制器射线的锚点。 定义射线的起点和方向。起点
         }
 ````
 
-!> 如果 Raycast Origin 属性为null值，则RXController.transform会做为默认的射线发射起点。
-> 设置Raycaster Origin属性，设置射线的起点和方向。   
+!> If Raycast Origin is null, RxController.transform will be used to generate ray by default.
+> Set Raycaster Origin.   
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/photo/Controller-Raycaster.jpg ':size=390X264')
 
 
@@ -70,44 +70,43 @@ RXController 控制器射线的锚点。 定义射线的起点和方向。起点
 #### Raycast Culling Mask
 `public LayerMask RaycastCullingMask { get; set; }`
 
-RXController射线发射器的交互对象层级。默认值只与UI对象交互。
+RXController is on UI layer by default. 
 
 
 #### RaycastDistance
 `public float RaycastDistance { get; set; }`
 
-射线发射器发射射线的长度。默认值 : Infinity
+Default value is Infinity.
 
 
 
 #### RenderRay
 `public bool RenderRay { get; set; }`
 
-控制渲染射线的开关值。
+Render ray or not.
 
 
 #### RayRenderer
 `public LineRender RayRenderer { get; set; }`
 
-渲染RXController的交互射线所使用的 LineRenderer。
+LineRenderer is used to render ray. 
 
 
-#### raycastResult
+#### RaycastResult
 `public RXRaycasterResult RaycasterResult { get; }`
 
-RaycasterResult 结构体返回的是当前帧内的射线检测结果。详细参数见 [RaycasterResult](/ScriptingReference/RaycasterResult)
-
-此属性再配合 `GetRay()`方法，开发者可以自定义射线渲染流程。
+RaycasterResult struct is the raycast result for current frame. Check [RaycasterResult](/ScriptingReference/RaycasterResult) for more details.
 
 
-### 公共方法
+
+### Public Methods
 
 #### GetRay
 `public Ray GetRay()` 
 
-获取指示当前RXController瞄准方向的射线。
+Get a ray that is shooting from RxController to where the controller is pointing.
 
-以下代码为 `GetRay()` 方法的内部实现:
+`GetRay()` Implementation:
 ```bash
         
         public Ray GetRay ()
@@ -120,9 +119,9 @@ RaycasterResult 结构体返回的是当前帧内的射线检测结果。详细�
 #### IsButton
 `public bool IsButton(ControllerButtonCode button)`
 
-如果当前帧内，用户正在按着button按键， 返回True，否则返回False。
+Check if user is pressing a specific button in thie frame.
 
-代码举例:
+Sample Code:
 
 ```bash
 void CheckButtonPressingController ()
@@ -136,49 +135,45 @@ void CheckButtonPressingRXInput ()
     RXInput.IsButton(RhinoXButton.App, ControllerIndex.Any);
 }
 ````
-> 上述两种方法是相同的。
-当开发者需要通过编程接口获取Controller按钮事件的时候， 使用 [RXInput](/ScriptingReference/RXInput) 类是一个更方便的选择。
+> Both implementations shown above can be used to check if a button is pressed. [RXInput](/ScriptingReference/RXInput) is a more convenient option.
 
 
 #### IsButtonDown
 `public bool IsButtonDown(ControllerButtonCode button)`
 
-当且仅当用户正在按下button按键的帧内， 返回True，否则返回False。 
+Check if a button is pressed down in current frame.
 
 #### IsButtonUp
 `public bool IsButton(ControllerButtonCode button)`
 
-当且仅当用户松开button按键的帧内， 返回True，否则返回False。 
+Check if a button is up in current frame. 
 
 
 #### IsTap
 `public bool IsTap(ControllerButtonCode button)`
 
-当用户单击button的时候，返回True，否则返回False。 
+Check if any button is clicked.
 
-> 可在 ProjectSetting/RhinoX Setting中配置单击按键事件的触发时间阀值。
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/RhinoXProjectSetting-Threshold-Time.jpg ':size=450X400')
+> User can config click threadhold in ProjectSetting/RhinoX Setting.
+> ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/RhinoXProjectSetting-Threshold-Time.jpg ':size=450X400')
 
 #### IsDoubleTap
 `public bool IsDoubleTap(ControllerButtonCode button)`
 
-当用户双击button的时候，返回True，否则返回False。 
-
-> 在 ProjectSetting/RhinoX Setting中配置双击按键事件的触发时间阀值。
-
+Check if a button is double clicked. 
+> User can config double click threadhold in ProjectSetting/RhinoX Setting.
 
 #### IsLongHoldingButton
 `public bool IsLongHoldingButton(ControllerButtonCode button)`
 
-当用户长按button的时候，返回True，否则返回False。 
-
-> 在 ProjectSetting/RhinoX Setting中配置长按按键事件的触发时间阀值。
+Check if a button hold action is performed. 
+> User can config long hold threadhold in ProjectSetting/RhinoX Setting.
 
 
 #### GetTouchPadPoint
 `public bool GetTouchPadPoint(out Vector2 TouchPadPointer)`
 
-当用户落指于Controller的touchpad 感应区内， 输出手指落点的坐标： 
-左下角 = [-1,-1] , 右上角 = [1, 1]
+When user's finger is on Controller touchpad, this will return true. SDK will output a 2D position to help developer to locate where the finger is on physical touch pad： 
+Left bottom corner = [-1,-1] , Right top corner = [1, 1]
 
-如果没有落指，返回 False。
+If this method return to false, it means there is no finger touch detected on touch pad.

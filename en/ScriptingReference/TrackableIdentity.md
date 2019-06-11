@@ -1,23 +1,23 @@
 # Trackable Identity
 
-> 命名空间: Ximmerse.RhinoX     
+> Namespace: Ximmerse.RhinoX     
 > public sealed class TrackableIdentity : MonoBehaviour
     
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/TrackableIdentity.png ':size=450X400')
 
-Trackable identity 组件通过 Trackable ID指向一个可追踪物体。
-- 设置 Trackable identity 的 ID 属性，来定义此组件指向的物体。
-- Trackable identity 的ID属性可在运行时被程序修改。
-- 当物体被追踪/丢失追踪的时候，触发相应的事件。
+Trackable Identity component can track an object via Trackable ID.
+- Set ID in Trackable Identity inspector, defining which tag this component is associated to.
+- Trackable Identity can be modified during runtime.
+- Events will be triggered when the tracked object is tracked or out out line of sight.
 
-### 公共成员
+### Public Members
 
 #### TrackableID
 - `public int TrackableID { get; set; };`
 
-此属性用于设置追踪对象的ID。
+Set or get tracked object ID.
 
-内置ID:
+Pre-defined Beacon ID:
 
  Beacon 01 = 65;
  
@@ -25,28 +25,26 @@ Trackable identity 组件通过 Trackable ID指向一个可追踪物体。
  
  Beacon 03 = 67;
  
- 主控制器 = 81;
+ Controller = 81;
  
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/TrackableIdentity-Target-Dropdown.jpg ':size=450X400')
 
-> 关于Custom ID : 除了标准的Beacons和Controller， RhinoX 还支持 Cube， Touch平板，Table 等物体跟踪。当使用到这些附加物体时， 就需要设置 Custom ID。
-关于如何获取这些附加追踪物，请联系[Ximmerse Support](https://www.ximmerse.com/contact)
+> About Custom ID: Besides beacons and controllers, RhinoX also supports Cube Controller, tablets, and tables. When using these additional controllers, custom ID will be needed. To get more information about additional input devices, please contact [Ximmerse Support](https://www.ximmerse.com/contact).
 
 #### ActivateGameObject
 - `public bool ActivateGameObject { get; set; } `
 
-在建立跟踪/丢失跟踪的时候，设置此GameObject的激活状态。
-
+Set GameObject acvitation status.
 
 #### IsVisible
 - `public bool IsVisible { get; }`
 
-此属性指示当前对象是否正在被跟踪。也可以通过[ObjectTracking](/ScriptingReference/ObjectTracking)的接口获取物体被跟踪的详细信息。
+Is the tracked object visible to tracking camera or not. This boolean can also be aquired through [ObjectTracking](/ScriptingReference/ObjectTracking) interface.
 
 #### OnVisibilityChange
 - `public VisiblityChangeEvent OnVisibilityChange;`
 
-物体开始被跟踪/丢失跟踪的帧会触发此事件。
+This is triggered right before an object is tracked and right after an object moves out of line of sight of the tracking camera.
 
 ```bash
     void Start()
@@ -63,5 +61,5 @@ Trackable identity 组件通过 Trackable ID指向一个可追踪物体。
 #### VerboseLog
 - `public bool VerboseLog { get; set; } `
 
-如果打开此开关，则会逐帧打印详细的追踪log。 开发者需要使用 ADB 的 Logcat 工具获取。
+If this is set to true, the SDK will output detailed logs every frame. Developer needs to use ADB tools to access the log output.
 
