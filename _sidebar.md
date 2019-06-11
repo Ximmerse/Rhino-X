@@ -1,5 +1,4 @@
 - [Rhino-X系统](README.md)
-  - [系统说明](SystemIntro.md)
   - [硬件参数](AboutRhinoX.md)
   - [开箱](OutOfBox.md)
   - [Launcher](Launcher.md)

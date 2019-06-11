@@ -8,8 +8,16 @@
   - [Object Tracking](/en/ObjectTracking.md)
   - [Controller](/en/Controller.md)
   - [Beacon Ground Anchor](/en/GroundPlane.md) 
-- [API](/en/API.md)
-- [FAQ](/en/faq.md)
+- [Key Components Documentation](en/ScriptingReference.md)
+  - [ARCamera](en/ScriptingReference/ARCamera.md)
+  - [TrackableIdentity](en/ScriptingReference/TrackableIdentity.md)
+  - [DynamicTarget](en/ScriptingReference/DynamicTarget.md)
+  - [ObjectTracking](en/ScriptingReference/ObjectTracking.md)
+  - [GroundPlane](en/ScriptingReference/GroundPlane.md)
+  - [RXController](en/ScriptingReference/RxController.md)
+  - [RXInput](en/ScriptingReference/RXInput.md)
+  - [RhinoXButton](en/ScriptingReference/RhinoXButton.md)
+  - [RXButtonEventTrigger](en/ScriptingReference/RXButtonEventTrigger.md)
 - [Release Notes](/en/changelogs.md)
 
 

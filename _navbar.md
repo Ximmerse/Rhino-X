@@ -1,3 +1,3 @@
 - Translations
-  - [🇨🇳 中文](/)
-  - [:uk: English](/en/)
+  - [🇨🇳 中文](/README.md)
+  - [:uk: English](/en/README.md)
