@@ -1,6 +1,6 @@
 # Advanced Tutorial
 
-This guide builds on top of Getting Started, futher explaining the concepts used in SDK and advanced SDK usages.
+This guide builds on top of Getting Started tutorial, futher explaining the concepts and advanced SDK usages.
 
 
 
@@ -10,7 +10,7 @@ Frequely used concepts and conponents will be explained below.
 
 ### AR Camera
 
-AR Camera acts like a regular Unity Camera, caputring the view that player sees. The SDK requires a Camera object in the scene, and this camera object must have `ARCamera` and `Tag Tracker` components. For detailed setup, please reference the camera setup in demo scene.
+AR Camera acts like a regular Unity Camera, caputring the view that player sees. The SDK requires a Camera object in the scene, and this camera object must have `ARCamera` and `Tag Tracker` components. For detailed setup, please reference the camera setup in demo scene in SDK.
 
 ### Marker Target
 

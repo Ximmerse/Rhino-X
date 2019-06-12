@@ -8,7 +8,7 @@
   - [Getting Started](/en/GettingStarted.md)
   - [Object Tracking](/en/ObjectTracking.md)
   - [Controller](/en/Controller.md)
-  - [Beacon Ground Anchor](/en/GroundPlane.md) 
+  - [Ground Plane](/en/GroundPlane.md) 
 - [Key Components Documentation](en/ScriptingReference.md)
   - [ARCamera](en/ScriptingReference/ARCamera.md)
   - [TrackableIdentity](en/ScriptingReference/TrackableIdentity.md)
