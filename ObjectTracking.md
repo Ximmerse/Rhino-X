@@ -29,15 +29,11 @@ BEACON-500.json 文件内容:
 - 在Project上右键弹出菜单， 创建一个 ObjectTrackingProfile:
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Create-Tracking-Profile.png)
 
-- 将 BEACON-500.json 文件拖到刚才创建的 TrackingProfile.asset对象的Inspector 面板的Accept Drag 区域内.
+- 勾选 "Track Beacons" 选项。
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Assign-Beacon-JSON.png)
 
-完成以后, TrackingProgile 的 Insepector显示如下：
-
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/TrackingProfile-Setup-Completely.png)
-
-!> TrackingProfile是一个数据库，存储需要跟踪的对象的标定数据。 实际使用中，需要关联的标定文件数量一般都不止一个。
+!> TrackingProfile是一个数据库，存储需要跟踪的对象的标定数据。
 
 - 接下来， 创建 ARCamera， 将刚才创建的 TrackingProfile 对象拖入到 ARCamera 的 Tracking Profile 属性。
 
@@ -45,32 +41,15 @@ BEACON-500.json 文件内容:
 
 !> ARCamera 组件会在启动的时候， 把 TrackingProfile 所持有的标定数据发送给底层硬件接口。底层硬件则会根据这些数据去扫描和追踪物体。 
 
-- 最后一步，创建 Dynamic Target 对象. 把 Trackable Identity 的 TrackableID 值设置为 65.
+- 最后一步，创建 Dynamic Target 对象. 把 Trackable Identity 的 Target 值设置为 'Beacon 01'.
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Create-GameObject-Shortcut.png ':size=450X400')
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/SetTrackableIdentity.png ':size=450X400')
 
-!> 如果要跟踪2号和3号Beacon, 只需要将 TrackableID设置为66，67.
-
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/DynamicTarget-DebugSetting.png ':size=450X400')
-
-!> DynamicTarget 上的 DebugView 和 "Pring Detailed Tracked Data" 开关请打开，这可以帮助开发者在运行tracking应用的时候，实时的看见每个Target的轴和尺寸，以及实时跟踪信息。
+!> 如果要跟踪2号和3号Beacon, 只需要将 Target 设置为 'Beacon 02', 'Beacon 03'.
 
 - 保存Beacon-Tracking场景，编译并运行。
 
 戴上你的 RhinoX，观察 Beacon 被追踪到的视图。
 
-
-
-# 总结
-此教程展示了如何使用 RhinoX SDK 实现物体跟踪。
-
-一些注意事项:
-
-!> 不能同时使用两个含有相同ID的JSON标定文件，如下图，CARD-410 和 CARD-420含有相同的TrackingID，不能同时使用。
-
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Tracking-Profile-Conflicts.png ':size=450X400')
-
-!> 加载的标定文件越多，对设备的能耗越高. 开发者应该只加载所需要的标定文件。
- 

@@ -35,15 +35,13 @@
 //更详细的接口说明， 请参见API文档部分. 
 
     RXController controller = GetComponent<RXController>();
-    controller.OnTap.AddListener((ControllerButtonCode btn) => {
-        Debug.LogFormat("On controller tap : {0}", btn);
-    });
+    bool isTappingAppButton = controller.IsButton(ControllerButtonCode.App);
             
 ```
 
-> RxController 的 Raycast 对象定义了和 UI 的交互射线。
+> RxController 的 Enable Raycasting 属性如果打开，则 Controller 会发射一条和可以通过 Unity Event System 和其它GameObject对象交互射线。
 
-
+> 其中 Line Renderer 属性为射线的渲染器。
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/RxControllerInspector.png ':size=450X400')
 
@@ -61,48 +59,22 @@
 !> RxEventSystem 事件继承于 UnityEngine.EventSystem 对象，与Unity自带的EventSystem对象冲突， 所以请删除unity自动创建的EventSystem对象(SDK程序会在运行时自动删除)
 
 
-## RxRaycast 组件
+## 关于 RxController 的 Raycasting 机制
 
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/RxRaycaster-Inspector.png ':size=450X400')
-
-> RxRaycast组件定义射线的起点和方向。 它可以和Unity内置的事件系统一起工作。
-> 设置 EventMask 和 Raycast Distance 以定义交互对象的层级和射线的长度。
+> Raycast Origin 定义射线的起点和方向。 
+> 设置 Raycast Culling Mask 和 Raycast Distance 以射线发射器的交互对象层级和射线的长度。
+> Ray Renderer指向一个 LineRenderer ， 负责渲染射线。 此字段可以设置为空值，设置为空则不渲染射线。
 
 ```bash
-//以下代码示例使用Unity的事件系统和RxController协同工作。 
+//你可以通过以下方式， 获取射线的信息， 从而实现自定义渲染的射线： 
 
-public class EventListenerDemo : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
-{
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        Debug.LogFormat(this, "Click : {0}", name);
-    }
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        Debug.LogFormat(this, "Down : {0}", name);
-    }
-
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        Debug.LogFormat(this, "Enter : {0}", name);
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        Debug.LogFormat(this, "Exit : {0}", name);
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        Debug.LogFormat(this, "Up : {0}", name);
-    }
-}
+Ray controllerRay = GetComponent<RXController>().GetRay();
+//TODO : render the ray by your code
             
 ```
 
 
-!> RxRaycaster 基于物理系统，也就是说，要求GameObject上，必须有 Collider 并且层级处于 RxRaycaster.CullingMask层级内才能与控制器实现交互。
+!> RXController的 raycasting 基于物理系统，也就是说，要求可交互的GameObject上，必须有 Collider 并且层级处于 RxRaycaster.CullingMask层级内才能与控制器实现交互。
 !> 关于Collider的设置， 可以参考 Controller UI场景中的UI组件上的BoxCollider设置。
 
 
