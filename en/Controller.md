@@ -35,15 +35,13 @@ RxController has the following characteristics:
 //Please check SDK documentation for more details. 
 
     RXController controller = GetComponent<RXController>();
-    controller.OnTap.AddListener((ControllerButtonCode btn) => {
-        Debug.LogFormat("On controller tap : {0}", btn);
-    });
+    bool isTappingAppButton = controller.IsButton(ControllerButtonCode.App);
             
 ```
 
-> RxController Raycasts against UI elements.
+> RxController Raycasts against UI elements when EnableRaycasting is enabled. 
 
-
+> Line Renderer is used to render the rays.
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/RxControllerInspector.png ':size=450X400')
 
@@ -61,49 +59,22 @@ RxController has the following characteristics:
 !> RxEventSystem inherits from UnityEngine.EventSystem，so please delete Unity auto-created EventSystem object/component. (SDK does this automatically)
 
 
-## RxRaycast Component
+## RxController and Raycasting 
 
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/RxRaycaster-Inspector.png ':size=450X400')
-
-> RxRaycast compoennet defines raycast origin and direction. It works with Unity  built-in event system.
-> Config EventMask and Raycast Distance to define raycast layers and raycast distance.
+> Raycasting origin can be defined under RxController inspector.
+> Raycast Culling Mask and Raycast Distance can be configurated under RxController Inspector.
+> Ray Renderer is a pointer to a LineRenderer component, taking care of line rendering. Note: If this field is empty, then nothing will be rendered.
 
 ```bash
-//The following sample shows how RxController works with Unity event system.
+// Developers can get ray cast info through the following API call： 
 
-public class EventListenerDemo : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
-{
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        Debug.LogFormat(this, "Click : {0}", name);
-    }
+Ray controllerRay = GetComponent<RXController>().GetRay();
+//TODO : render the ray by your code
 
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        Debug.LogFormat(this, "Down : {0}", name);
-    }
-
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        Debug.LogFormat(this, "Enter : {0}", name);
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        Debug.LogFormat(this, "Exit : {0}", name);
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        Debug.LogFormat(this, "Up : {0}", name);
-    }
-}
-            
 ```
 
 
-!> RxRaycaster is based on physics raycast, so there must be a Collider component attached on the Gameobject. Additionaly, the gameobject must be on the layer that is included in EventMask.
+!> RXController raycasting is based on physics raycast , meaning it requires Collider component to work. RxRaycaster.CullingMask must be also configurated to interact with GameObjects on a specific layer.
+!> For Collider configuration, please use BoxCollider on UIs in Controller UI scene as a sample configuration.
 
-!> For configuration of Collider, you can use BoxCollider configuration in Controller UI scene as an example.
 
-- Now that we have finished basic RxController usaged, the project is ready to be deployed and tested on the device.

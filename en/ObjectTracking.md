@@ -26,11 +26,13 @@ BEACON-500.json contents:
 - Create a tracking profile by clicking on "Tracking Profile" under Create/Ximmerse/:
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Create-Tracking-Profile.png)
 
-- Drag BEACON-500.json to TrackingProfile.asset inspector area.
+- Check "Track Beacons" option.
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Assign-Beacon-JSON.png)
 
-The inspector of TrackingProgile will look like the following image：
+!> TrackingProfile is database, storing calibration data for the trackable tags.
+
+- Next, create ARCamera, drag the newly created TrackingProfile to Tracking Profile field under ARCamera inspector.
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/TrackingProfile-Setup-Completely.png)
 
@@ -42,30 +44,12 @@ The inspector of TrackingProgile will look like the following image：
 
 !> ARCamera will send all the tracking profile data to low-level API upon SDK initialization. Low-level algorithm will determine how to utlize these databases.  
 
-- Lastly, create a Dynamic Target. Set TrackableID under Trackable Identity component to 65.
+- Lastly, create a Dynamic Target. Set Trackable Identify Target to `Beacon 01`.
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Create-GameObject-Shortcut.png ':size=450X400')
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/SetTrackableIdentity.png ':size=450X400')
 
-!> If using #2 or #3 beacon, please set TrackableID to 66, 67.
+!> If using #2 or #3 beacon, please set Target to `Beacon 02` or `Beacon 03`.
 
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/DynamicTarget-DebugSetting.png ':size=450X400')
-
-!> Please turn on DebugView and "Pring Detailed Tracked Data" under DynamicTarget. Turning on these options help developers to see the tracking trarget physical size and real time tracking info.
-
-- Save Beacon-Tracking scene and then deploy the application to RhinoX. The application is now ready to be tested. 
-
-
-
-# Conclusion
-Again, this guide helps developers understand how RhinoX SDK tracks physical objects.
-
-Please note that:
-
-!> JSON files with the same ID can not be used together. As shown below, CARD-410 and CARD-420 contain the same TrackingID，so they can't be used together.
-
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Tracking-Profile-Conflicts.png ':size=450X400')
-
-!> The more tracking profiles are loaded, the more taxing it is on the CPU. Developers should only load the required tracking profiles.
- 
+- Save the scene. At this point, everything is ready to be deployed.
