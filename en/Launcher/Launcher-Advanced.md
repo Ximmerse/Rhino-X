@@ -2,31 +2,31 @@
 
 ##	Launcher Installation
 
-[adb](https://developer.android.com/studio/command-line/adb) provided in [Android SDK](https://developer.android.com) is required for installation.
+[adb](https://developer.android.com/studio/command-line/adb) provided with the [Android SDK](https://developer.android.com) is required for installation.
 
-!> When installing the launcher with adb command, please use -g as an additional parameter. Doing this enabling permissions upon successful installation.
+To install, connect the device to the computer using the USB type C port at the front of the HMD and issue the following command
 ```bash
   $ adb shell install -r -g C:\MyApp.apk
 ````
+!> When installing the launcher with adb command, please use -g as an additional parameter. This will set Android level permissions automatically upon a successful installation.
 
-!> RhinoX Required Permissions:
-
+### RhinoX Required Permissions:
+The Launcher application (and most applications) require a minimum set of system permissions to operate correctly.
 ```bash
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.CAMERA" />
 ````
 
+## Adding applications to the RhinoX Launcher
 
-
-!> To make your custom application appear in Launcher application, developers would need to add the following attribute in Android Manifest.xml:
+To make custom application appear in the Launcher, developers must ensure that the following attribute is set in the application Android Manifest.xml:
 
 ```bash
  <category android:name="com.ximmerse.category.WONDERLAND_AR" />
 ````
- 
-RhinoX SDK comes with an <b>AndroidManifest.xml</b> :
 
+!> RhinoX SDK comes with an <b>AndroidManifest.xml</b>
 ```bash
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ximmerse.aio">
@@ -57,15 +57,15 @@ RhinoX SDK comes with an <b>AndroidManifest.xml</b> :
 </manifest>
 ````
 
-## Uninstall Application
+## Uninstall an Application
 
-Aim to a to-be-deleted application, hold down controler Trigger button or Confirm button on HMD. A dialog will pop up. User can uninstall the application through this pop-up dialog.
+Select or Aim the to-be-deleted application and hold down the controller 'Trigger' or Confirm button on the HMD. A "Delete" button will show up. After pressing the "Delete" button, users will be prompted for confirmation to uninstall the application.
 
-!>	Note: system applications can not be removed.
+!>	Note: System applications can not be removed.
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Launcher/Launcher-Uninstall.png ':size=865X394')
 
-##	Change Display Language
-Click on Wifi button in task menu, then select "Change Language", then change your display language to your desired language.
+##	Set the Launcher Language
+Click on Wifi button in the task menu. Then select "Language". Change the display language to the desired option.
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Launcher/Launcher-ChangeLanguage.png ':size=865X394')

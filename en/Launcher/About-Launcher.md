@@ -1,3 +1,3 @@
 # Launcher User Manual
 
-- Launcher acts like a home screen for RhinoX. Users can launch applications, un-install applications, connect Wifi and manage devices through launcher. Launcher can be interacted by user head gaze or controllers.
+- The Launcher serves as the home screen for the RhinoX. Users can easily start and remove applications, connect to Wifi networks, and manage devices through it. It can be used without controllers (gaze selection) or with controllers.
