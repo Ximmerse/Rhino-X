@@ -1,4 +1,4 @@
-# RXButtonEventTrigger 
+# RXButtonEventTrigger
 
 > Namespace: Ximmerse.RhinoX     
 > public sealed class RXButtonEventTrigger : MonoBehaviour
@@ -7,17 +7,18 @@ Accepts RhinoX button events and sends event message to desired objects.
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/RxButtonEventTrigger.png ':size=450X400')
 
-Different from RXInput，RXController is designed to be used directly by developers through its API. RXButtonEventTrigger privides developers a quick, customizable event system that is built on Unity event system.
+Different from RXInput，RXController is designed to be used directly by developers through its API. RXButtonEventTrigger provides developers a quick, customizable event system that is built on top Unity event system.
 
-> When RXButtonEventTrigger and RXController are placed on the same GameObject, developers can have a lot of controls over button actions:
+> When RXButtonEventTrigger and RXController are placed on the same GameObject, developers can have a lot of control over button actions:
+
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/RxButtonEventTrigger-AddControllerEvents.jpg ':size=450X400')
 
+> When RXButtonEventTrigger and RXController are not on the same GameObject, event is triggered by Confirm Button on the RhinoX by default:
 
-
-> When RXButtonEventTrigger and RXController are not on the same GameObject, event is triggered by App Button by default:
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/RxButtonEventTrigger-AddSideButtonEvents.jpg ':size=450X400')    
 
 > RhinoX HMD Side Button (Confirm Button)
+
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/photo/RxSideBarConfirmButton.jpg ':size=300X400')
 
 
