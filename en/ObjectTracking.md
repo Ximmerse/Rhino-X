@@ -1,7 +1,7 @@
 ## Object Tracking
 
 This tutorial will guide you on how to track a physical object.
-
+### Using the SDK 
 - Create a new scene, naming it Beacon-Tracking. Delete the MainCamera GameObject.
 We will use the beacon from the devkit as an example.
 
@@ -34,7 +34,7 @@ We will use the beacon from the devkit as an example.
 - Start the application, hold the beacon on your hands, and see how our virtual cube follows it.
 
 ### What is happening?
-In order to track objects the RhinoX utilizes the X-Tag system. The SDK provides easy to use tools and components to "tell" our application what tag information to track, and how to associate this data to a 3D Transform. To achieve this, we use TrackingProfiles, .JSON and .dat files. These describe what identities to track, link trackable identities to tags, and what a tag looks like (calibration).
+In order to track objects the RhinoX utilizes the X-Tag system. The SDK provides easy to use tools and components to "tell" our application what tag information to track, and how to associate this data to a 3D Transform. To achieve this, we use TrackingProfiles, .JSON and .dat files. These describe what identities to track, associate trackable identities between the low level and high level libraries, and what a tag looks like (calibration).
 
 The ARCamera sends all the tracking profile data to the low-level API upon initialization of the application. The Low-level algorithms will determine how to utilize these databases to track objects.  
 
