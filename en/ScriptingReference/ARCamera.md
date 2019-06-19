@@ -5,14 +5,28 @@
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Inspector/ARCamera.png ':size=450X400')
 
-ARCamera is a virtual representation of HMD in virtual world. ARCamera provides the following functionalities in SDK:
-- Update ARCamera Transform based on user real time movement.
-- ARCamera component drives Tag Tracking module，which scans physical objects.
+ARCamera is a virtual representation of the HMD in the virtual world. ARCamera provides the following functionalities in the SDK:
+- Update ARCamera Transform based on user real time movement (VIO)
+- ARCamera component drives Tag Tracking module，which scans physical objects and provides their virtual coordinates.
 - Stereoscopic rendering.
 - Cursor rendering. The cursor can be used to interact with Unity interactable targets, such as uGUI buttons, and provide interaction events.
 
-!> ARCamera is a singleton and there should only be one instance in the scene. Developers can get a refference to ARCamera by using ARCamera.Instance.
+!> ARCamera is a singleton and there should only be one instance in the scene. Developers can get a reference to ARCamera by using the static Instance property.
 
+```bash
+using UnityEngine;
+using Ximmerse.RhinoX;
+
+public class ARCameraExample : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        ARCamera hmdCamera = ARCamera.Instance;
+        Debug.Log("Camera object name: " + hmdCamera.name);
+    }
+}
+```
 ### Public Members
 
 #### TrackPosition
@@ -24,10 +38,7 @@ ARCamera updates its positon in real time based on user's physical movement.
 #### TrackRotation
 - `public bool TrackRotation { get; set; }; // Default : true`
 
-AARCamera updates its orientation in real time based on user's physical movement.
-
-
-
+ARCamera updates its orientation in real time based on user's physical movement.
 
 #### IsObjectTrackingEnabled
 - `public bool IsObjectTrackingEnabled { get; } `
@@ -35,7 +46,7 @@ AARCamera updates its orientation in real time based on user's physical movement
 If this value is true, it means that Object Tracking Engine is successfully initialized. `SetObjecTrackingProfile()` only works after `IsObjectTrackingEnabled == True` is true.
 
 ```bash
-//Example code: how to loads a new tracking profile:
+//Example code: Coroutine to load a new tracking profile during runtime.
 IEnumerator ChangeTrackingProfile ()
 {
    while(ARCamera.Instance.IsObjectTrackingEnabled == false)
@@ -53,14 +64,14 @@ IEnumerator ChangeTrackingProfile ()
 Reticle is a small round cursor rendered on screen, representing where the user is looking at. `Reticle Ray` is used to interact with GameObjects.
 `EnableReticle` is used to disable or enable Reticle rendering. When `EnableReticle` is set to true, `Reticle Ray Generator` is enabled.
 
-!> <b>`Reticle Ray` only works with GameObjects defined under `InteractMask` when `RenderRectile is` set to true, and `RxEventSystem` and `RxInputModule` are both existed in the scene. </b>
+!> <b>`Reticle Ray` only works with GameObjects defined under `InteractMask` when `RenderRectile` is set to true, and `RxEventSystem` and `RxInputModule` are both present in the scene. </b>
 
 
 #### ReticleImage
 - `public Texture2D ReticleImage { get; set; } // See : RhinoXGlobalSetting.DefaultRectileImage`
 
 Reticle Image, which can be customized.
-If `ReticleImage` is null, reticle will not be rendered, but raycast will still work.
+If `ReticleImage` is null, reticle will not be rendered, but raycasting will still work.
 
 ```bash
     void ChangeReticleTexture()
@@ -73,7 +84,7 @@ If `ReticleImage` is null, reticle will not be rendered, but raycast will still 
 #### ReticleInteractMask
 - `public LayerMask ReticleInteractMask { get; set; } // Default : see : 1 << 5 (UI mask)`
 
-When `EnableReticle` is set to true, developer can define interactable object layers. 
+When `EnableReticle` is set to true, developer can define interactable object layers.
 
 ```bash
     void ChangeReticleTexture()
@@ -86,7 +97,7 @@ When `EnableReticle` is set to true, developer can define interactable object la
 #### TrackingProfile
 - public ObjectTrackingProfile TrackingProfile { get; } // Default : null
 
-Gets currently used Tracking Profile. Tracking Project is set through ARCamera Inspector. If changing Tracking Profile is desired, please use `SetObjecTrackingProfile()`.
+Gets currently used Tracking Profile. Tracking Project is set through ARCamera Inspector. If changing Tracking Profile is desired, please use [`SetObjecTrackingProfile()`](en/ScriptingReference/ARCamera.md?id=SetObjecTrackingProfile).
 
 
 #### InterPupilDistance
@@ -139,7 +150,7 @@ IEnumerator ChangeTrackingProfile ()
 }
 ```
 
-!> <b>Loading Tracking Profile is an asynchronous operation, so the operation is not finished immediately. However, the entire operation typically only 1 frame.</b>
+!> <b>Loading Tracking Profile is an asynchronous operation, so the operation is not finished immediately. However, the entire operation typically lasts 1 frame.</b>
 
 #### RecenterTracking()
 - `public void RecenterTracking();`
@@ -153,12 +164,12 @@ Recenter the ARCamera, setting localPosition and localRotation to zero.
 #### Instance
 - `public static ARCamera Instance { get; }`
 
-ARCamera static refference.
+ARCamera static reference.
 
 ```bash
     void Update()
     {
-        //Print head trcked position and rotation per frame:
+        //Print head tracked position and rotation per frame:
         ARCamera arCamera = ARCamera.Instance;
         Debug.LogFormat("Head position:{0}, rotation:{1}", arCamera.transform.localPosition, arCamera.transform.localEulerAngles);
     }
@@ -166,9 +177,9 @@ ARCamera static refference.
 
 
 #### OnCreateStereoCameras
-- `public static event System.Action<Camera LeftEye, Camera RightEye>` 
+- `public static event System.Action<Camera LeftEye, Camera RightEye>`
 
-Developers can listen the events triggered by left and right eye cameras.
+Developers can listen the events triggered by the creation of the left and right eye cameras.
 
 ```bash
     void Start()

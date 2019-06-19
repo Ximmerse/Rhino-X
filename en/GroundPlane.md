@@ -28,7 +28,7 @@ Similarly to the Object Tracking example shown earlier in this guide, we are usi
 
 - Walk around, and every so often look at the beacon to see how you will be recentered.
 
-!> Important: The GroundPlane component only affects the user's head yaw rotation (i.e the physical marker doesn't need to be laying perfectly flat in the ground).
+!> Important: The GroundPlane component only affects the user's head yaw rotation (i.e. the physical marker doesn't need to be laying perfectly flat in the ground).
 
 ### What do the parameters mean?
 
