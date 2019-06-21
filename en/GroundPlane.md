@@ -14,7 +14,7 @@ Similarly to the [Object Tracking](en/ObjectTracking.md) example shown earlier i
 - Select the GroundPlane GameObject. This will serve as our reference or "anchor"
 
 <!-- ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/GroundPlane-Inspector.png ':size=450X400') -->
-![Logo](en/images/groundPlane.png)
+![Logo](images/groundPlane.PNG)
 
 !> In this tutorial, we use Beacon #1 to define the ground surface. Make sure the target in the Trackable Identity matches the beacon you are using.
 
