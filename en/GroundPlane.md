@@ -5,16 +5,16 @@ After RhinoX SDK is initialized during runtime, the AR Camera will be updated ba
 !> GroundPlanes are especially useful to have when the application requires multiple users to share both physical and virtual worlds.
 
 ### Using the SDK
-Similarly to the Object Tracking example shown earlier in this guide, we are using the RhinoX tracking capabilities to get the position and rotation of known markers. But this time, instead of moving a Unity object to where the marker is, we will move the user's head (the ARCamera) so the predefined scene object location matches that of our physical marker. We will talk about how to use the GroundPlane component to achieve this.
+Similarly to the [Object Tracking](en/ObjectTracking.md) example shown earlier in this guide, we are using the RhinoX tracking capabilities to get the position and rotation of known markers. But this time, instead of moving a Unity object to where the marker is, we will move the user's head (the ARCamera) so the predefined scene object location matches that of our physical marker. We will talk about how to use the GroundPlane component to achieve this.
 
 !> Developers often need a ground reference, and then place the head Transform information relative to the ground coordinate system.
 
 - Open Assets/Demo/Scenes/DeerIsland scene.
 
-- Select the GroundPlane GameObject. This will server as our reference or "anchor"
+- Select the GroundPlane GameObject. This will serve as our reference or "anchor"
 
 <!-- ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/GroundPlane-Inspector.png ':size=450X400') -->
-![Logo](./en/images/groundPlane.png)
+![Logo](en/images/groundPlane.png)
 
 !> In this tutorial, we use Beacon #1 to define the ground surface. Make sure the target in the Trackable Identity matches the beacon you are using.
 
@@ -41,3 +41,10 @@ Min and Max Tracked Distance is defining the tracking distance range in which th
 Min head error distance and Head diff angle defines the difference tolerance. When the error distance and diff angle falls within these thresholds, GroundPlane will not recenter the head position and orientation.
 
 DebugView is used to see GroundPlane virtual position.
+
+### What is happening?
+In this demo, we used the [GroundPlane](en/ScriptingReference/ObjectTracking.md) component to serve as an anchor or "fixed" reference point in the scene that will allow the application to update the user's virtual head Transform (in this case, the beacon marker).
+
+When the tracking system finds the marker associated to the Trackable Identity of the anchor object, the GroundPlane component will use this Transform to move (i.e. recenter) the user's head Transform relative to the anchor object.
+
+!> Remember: DynamicTarget will update its GameObject Transform relative to the User's. GroundPlane will update the User's Transform (ARCamera) relative to the GroundPlane's.
