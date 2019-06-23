@@ -53,3 +53,30 @@ BEACON-500.json 文件内容:
 
 戴上你的 RhinoX，观察 Beacon 被追踪到的视图。
 
+
+### 工作原理
+
+X-Tag 追踪系统需要开发者“告知”具体要追踪的物体的信息，以及如何把这些追踪物体和虚拟对象帮顶起来。
+
+ARCamera上的 Tracking Profile 字段就是用于存储这些追踪物体信息， 在 ARCamera 启动的时候， 会把 Tracking Profile 所存储的追踪物体信息传递到底层算法追踪系统。
+
+每个 Beacon 实物，都有一个Tracking ID编号， 使用这个编号就可以把 虚拟物体和 Beacon 实物关联起来。
+
+这种关联关系可以通过 tracking profile 中指向的的 json 文件来获得。
+
+以 BEACON-500.json 为例:
+```bash
+{
+    "CARD_SINGLE":
+    {
+        "CalibFile": "BEACON-500.dat", // Beacon 标定数据文件
+        "Markers": [65,66,67],  //ID 65, 66, 67 对应 #1, #2, #3 号beacon
+        "MarkersSize": [0.15,0.15,0.15] //Beacon 的实物尺寸， 单位米
+    }
+}
+```
+
+
+当我们在 Tracking Profile 上勾选了 Tracks beacon 选项的时候， ARCamera 会自动把 Beacon-500.json文件传递到底层追踪系统。
+
+而在 Dynamic Target上的 Trackable Identity 组件上，当选择了 Tracking ID = Beacon01的时候， 实际上 Trackable Identity的 Tracking ID 被赋值为65， 这样就把一个实物和虚拟的65号被追踪物体绑定起来了。

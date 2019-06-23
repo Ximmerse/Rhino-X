@@ -24,4 +24,14 @@
 
 - 编译并运行此场景，观察 GroundPlane 是怎样矫正头部相对于世界原点的位置和朝向。
 
->! 地面组件在场景中
+>! GroundPlane 组件会矫正用户的头部旋转的Yaw （Y轴旋转角度）， 不会改变 Pitch（X轴旋转角度） 和 Roll （Z轴旋转角度）
+
+
+### GroundPlane 工作原理
+
+当 RhinoX 的追踪系统跟踪到一个物体时候， 可以获取到物体相对于用户的头部位置和旋转。GroundPlane组件将这个相对关系做了逆向转换计算，计算出头部相对于物体的相对位置和相对旋转，这样就可以主动改变头部的世界位置和世界旋转， 以令用户头部的位置和朝向与被追踪物体的位置和朝向对齐。
+
+When the tracking system finds the marker associated to the Trackable Identity of the anchor object, the GroundPlane component will use this Transform to move (i.e. recenter) the user's head Transform relative to the anchor object.
+
+!> GroundPlane 组件与 DynamicTarget 组件是对立的两种工作原理， DynamicTarget 以用户头部为中心，更新组件自身transform 的位置和朝向。
+GroundPlane则是以自身为中心，更新用户头部的位置和朝向。
