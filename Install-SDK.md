@@ -1,6 +1,11 @@
 # SDK 安装
+  
+从 RhinoX github 库上下载最新的sdk文件:  [https://github.com/Ximmerse/Rhino-X/](https://github.com/Ximmerse/Rhino-X/)
 
-下载:  [https://github.com/Ximmerse/Rhino-X/](https://github.com/Ximmerse/Rhino-X/)
+或者下载 unitypackage 并导入到你的项目中 :    
+[https://github.com/Ximmerse/Rhino-X/releases](https://github.com/Ximmerse/Rhino-X/releases)
+
+!> 如果您不需要对 RhinoX SDK 做版本追溯，只需要一个稳定的版本供项目使用， 推荐使用第二种，也就是导入 Unitypackage 的方式。
 
 # SDK 文件结构介绍
 
