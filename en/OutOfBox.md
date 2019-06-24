@@ -1,7 +1,7 @@
 # A Start of an Exciting Journey！
 
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Rhino-X-Package-02.png ':size=250X200')
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Rhino-X-Package-01.png ':size=450X400')
+![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Rhino-X-Package-02.png ':size=350X300')
+![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Rhino-X-Package-01.png ':size=350X300')
 
 	
 Items in Box：HMD, free-form lenses, beacon and controller. Accessories include charger, charging cable, forehead foam, cleaning cloth and user manual. The system supports additional customizable input devices, which can be purchased separately.

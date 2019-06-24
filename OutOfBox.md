@@ -1,7 +1,7 @@
 # 开始激动人心的体验！
 
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Rhino-X-Package-02.png ':size=250X200')
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Rhino-X-Package-01.png ':size=450X400')
+![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Rhino-X-Package-02.png ':size=350X300')
+![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Rhino-X-Package-01.png ':size=350X300')
 
 	
 开箱硬件：头戴式显示设备（HMD）、自由曲面镜片（Lens）、空间定标（Beacon）、操作控制器（Controller）、附件（充电器、充电线、额头泡棉、眼镜布、说明书等。系统还支持更多的自定义设备，可额外采购。
