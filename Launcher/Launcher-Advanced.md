@@ -6,7 +6,7 @@
 
 !> 当使用 adb 安装的时候，请注意使用 -g 参数，在安装应用的时候赋予默认的应用权限。
 ```bash
-  $ adb shell install -r -g C:\MyApp.apk
+  $ adb install -r -g C:\MyApp.apk
 ````
 
 !> RhinoX应用需要以下权限:

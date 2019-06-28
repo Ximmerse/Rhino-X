@@ -6,7 +6,7 @@
 
 To install, connect the device to the computer using the USB type C port at the front of the HMD and issue the following command
 ```bash
-  $ adb shell install -r -g C:\MyApp.apk
+  $ adb install -r -g C:\MyApp.apk
 ````
 !> When installing the launcher with adb command, please use -g as an additional parameter. This will set Android level permissions automatically upon a successful installation.
 
