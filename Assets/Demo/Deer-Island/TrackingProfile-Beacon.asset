@@ -16,4 +16,11 @@ MonoBehaviour:
   items:
   - JSONConfig: {fileID: 102900000, guid: 7b2995b55de4e488b8ba40b59e9c5ebf, type: 3}
     jsonName: BEACON-500.json
-    jsonContent: 
+    jsonContent: "{\r\n    \"CARD_SINGLE\":\r\n    {\r\n        \"CalibFile\": \"BEACON-500.dat\",\r\n
+      \       \"Markers\": [65,66,67],\r\n        \"MarkersSize\": [0.15,0.15,0.15]\r\n
+      \   }\r\n}\r\n"
+  - JSONConfig: {fileID: 102900000, guid: ee539586e58170b4891a1594a70d94ca, type: 3}
+    jsonName: 91-BC301011105115J113.json
+    jsonContent: "{\n\t\"CARD_GROUP\":\n\t{\n\t\t\"CalibFile\": \"91-BC301011105115J113.dat\",\n\t\t\"ModeType\":
+      \"CONTROLLER\",\n\t\t\"GroupID\": 81,\n\t\t\"Markers\": [0, 5, 7, 10],\n\t\t\"MarkersSize\":
+      [0.04, 0.04, 0.04, 0.04]\n\t}\n}\n"

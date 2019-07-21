@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RhinoX-Unity-Editor</name>
+    </assembly>
+    <members>
+        <member name="T:Ximmerse.RhinoX.ARCameraInspector">
+             <summary>
+             ARC amera inspector.
+             </summary>
+            </member>
+        <member name="T:Ximmerse.RuntimeCalibration.CalibrationLayoutInspector">
+             <summary>
+             Calibration layout inspector.
+             </summary>
+            </member>
+        <member name="T:Ximmerse.RhinoX.RXSDKMenu">
+             <summary>
+             RhinoX SDK unity editor menu.
+             </summary>
+            </member>
+        <member name="M:Ximmerse.RhinoX.RXSDKMenu.CreateRxGlobalSetting">
+             <summary>
+             Creates a global RhinoX global setting.
+             </summary>
+            </member>
+        <member name="T:Ximmerse.RhinoX.RxEventTriggerEditor">
+             <summary>
+             Rx event trigger editor.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.RxEventTriggerEditor.kMenuItem_RxButtons">
+             <summary>
+             Menu items for Rx side-buttons
+             </summary>
+            </member>
+        <member name="M:Ximmerse.RhinoX.RxEventTriggerEditor.isEventPresented(Ximmerse.RhinoX.EventTriggerType)">
+             <summary>
+             Is the event type presents in the event entry list ?
+             </summary>
+             <returns><c>true</c>, if event presented was ised, <c>false</c> otherwise.</returns>
+             <param name="EventId">Event identifier.</param>
+            </member>
+        <member name="T:Ximmerse.RhinoX.RxSDKProjectSetting">
+             <summary>
+             RhinoX sdk project setting. Serialized properties will be written to Resourecs/RhinoXGlobalSetting .
+             </summary>
+            </member>
+        <member name="M:Ximmerse.RhinoX.RxSDKProjectSetting.CreateOrLoadRxGlobalSetting">
+             <summary>
+             Creates or load a global RhinoX global setting.
+             </summary>
+            </member>
+        <member name="T:Ximmerse.RhinoX.RxWelcomeWindow">
+             <summary>
+             Rx welcome window.
+             </summary>
+            </member>
+        <member name="T:Ximmerse.RhinoX.TrackableIdentityInspector">
+             <summary>
+             Trackable identity inspector.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackableIdentityInspector.TrackableID_Beacon01">
+             <summary>
+             The beacon 01's trackable ID.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackableIdentityInspector.TrackableID_Beacon02">
+             <summary>
+             The beacon 02's trackable ID.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackableIdentityInspector.TrackableID_Beacon03">
+             <summary>
+             The beacon 03's trackable ID.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackableIdentityInspector.TrackableID_MainController">
+             <summary>
+             The default controller's trackable ID
+             </summary>
+            </member>
+        <member name="T:Ximmerse.RhinoX.TrackedObjectJsonEditor">
+             <summary>
+             Tracked object json (editor only)
+             </summary>
+            </member>
+        <member name="T:Ximmerse.RhinoX.TrackedObjectJsonEditor.CardGroupJsonEditor">
+             <summary>
+             Card group json (editor only)
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackedObjectJsonEditor.CardGroupJsonEditor.CalibFile">
+             <summary>
+             The calibration file name.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackedObjectJsonEditor.CardGroupJsonEditor.ModeType">
+             <summary>
+             The type of the mode.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackedObjectJsonEditor.CardGroupJsonEditor.GroupID">
+             <summary>
+             The group identifier.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackedObjectJsonEditor.CardGroupJsonEditor.Markers">
+             <summary>
+             The sub-markers.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackedObjectJsonEditor.CardGroupJsonEditor.MarkersSize">
+             <summary>
+             The size of the sub-markers.
+             </summary>
+            </member>
+        <member name="T:Ximmerse.RhinoX.TrackedObjectJsonEditor.SingleCardJsonEditor">
+             <summary>
+             Single card json (editor only)
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackedObjectJsonEditor.SingleCardJsonEditor.CalibFile">
+             <summary>
+             The calibration file name.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackedObjectJsonEditor.SingleCardJsonEditor.Markers">
+             <summary>
+             The single markers
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackedObjectJsonEditor.SingleCardJsonEditor.MarkersSize">
+             <summary>
+             The size of the single markers.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackedObjectJsonEditor.CARD_GROUP">
+             <summary>
+             The card group.
+             </summary>
+            </member>
+        <member name="F:Ximmerse.RhinoX.TrackedObjectJsonEditor.CARD_SINGLE">
+             <summary>
+             The card single.
+             </summary>
+            </member>
+        <member name="M:Ximmerse.RhinoX.AssetDatabaseExt.GetSceneAsset(System.String,UnityEditor.SceneAsset@)">
+             <summary>
+             Gets the scene asset. 
+             return the path
+             </summary>
+             <returns>The scene asset.</returns>
+             <param name="sceneName">Scene name.</param>
+            </member>
+        <member name="M:Ximmerse.RhinoX.AssetDatabaseExt.FindAsset``1(System.String)">
+             <summary>
+             Find asset by the filter, return the first found one.
+             </summary>
+             <returns>The asset.</returns>
+             <param name="filter">Filter.</param>
+             <typeparam name="T">The 1st type parameter.</typeparam>
+            </member>
+        <member name="M:Ximmerse.RhinoX.AssetDatabaseExt.FindAsset``1(System.String,System.String)">
+             <summary>
+             Find asset by the filter, return the first found one that matchs the given name
+             </summary>
+             <returns>The asset.</returns>
+             <param name="filter">Filter.</param>
+             <typeparam name="T">The 1st type parameter.</typeparam>
+            </member>
+        <member name="M:Ximmerse.RhinoX.AssetDatabaseExt.FindAssetByType(System.String,System.Type)">
+             <summary>
+             Find asset by the filter, return the first found one that matchs the given name
+             </summary>
+             <returns>The asset.</returns>
+             <param name="filter">Filter.</param>
+             <typeparam name="T">The 1st type parameter.</typeparam>
+            </member>
+        <member name="M:Ximmerse.RhinoX.AssetDatabaseExt.FindAssets``1(System.String)">
+             <summary>
+             Find asset by the filter, return the all found one.
+             </summary>
+             <returns>The asset.</returns>
+             <param name="filter">Filter.</param>
+             <typeparam name="T">The 1st type parameter.</typeparam>
+            </member>
+        <member name="M:Ximmerse.RhinoX.AssetDatabaseExt.GetAssets``1(System.String)">
+             <summary>
+             Gets the assets from database by label.
+             </summary>
+             <returns>The assets.</returns>
+             <typeparam name="T">The 1st type parameter.</typeparam>
+            </member>
+        <member name="M:Ximmerse.RhinoX.AssetDatabaseExt.GetAsset``1(System.String)">
+             <summary>
+             Gets the first asset from database by label.
+             </summary>
+             <returns>The assets.</returns>
+             <typeparam name="T">The 1st type parameter.</typeparam>
+            </member>
+        <member name="M:Ximmerse.RhinoX.AssetDatabaseExt.GetAssets``1(System.String,System.String)">
+             <summary>
+             Gets the assets from database by name and label.
+             </summary>
+             <returns>The assets.</returns>
+             <typeparam name="T">The 1st type parameter.</typeparam>
+            </member>
+        <member name="M:Ximmerse.RhinoX.AssetDatabaseExt.GetAssetsInFolder``1(System.String[])">
+             <summary>
+             Gets all of the target assets in folder.
+             </summary>
+             <returns>The assets in folder.</returns>
+             <param name="folder">Folder.</param>
+            </member>
+        <member name="M:Ximmerse.RhinoX.AssetDatabaseExt.ReadAssetContent(UnityEngine.Object)">
+             <summary>
+             Reads the content of the asset.
+             </summary>
+             <returns>The asset content.</returns>
+             <param name="asset">Asset.</param>
+            </member>
+        <member name="T:Ximmerse.RhinoX.PEGUI">
+             <summary>
+             Polyengine GUI
+             </summary>
+            </member>
+        <member name="P:Ximmerse.RhinoX.PEGUI.redLabelStyle">
+             <summary>
+             Gets the red label style
+             </summary>
+             <value>The red label.</value>
+            </member>
+        <member name="P:Ximmerse.RhinoX.PEGUI.whiteLabelStyle">
+             <summary>
+             Gets the white label style
+             </summary>
+             <value>The red label.</value>
+            </member>
+        <member name="P:Ximmerse.RhinoX.PEGUI.blackLabelStyle">
+             <summary>
+             Gets the black label style
+             </summary>
+             <value>The red label.</value>
+            </member>
+        <member name="P:Ximmerse.RhinoX.PEGUI.whiteBoldLabelStyle">
+             <summary>
+             Gets the white bold label style
+             </summary>
+             <value>The red label.</value>
+            </member>
+        <member name="P:Ximmerse.RhinoX.PEGUI.blackBoldLabelStyle">
+             <summary>
+             Gets the black bold label style
+             </summary>
+             <value>The red label.</value>
+            </member>
+    </members>
+</doc>

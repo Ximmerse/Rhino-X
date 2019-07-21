@@ -9,15 +9,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1172385442, guid: 0f0a52caadf1d4e05868e818a57c7f2c, type: 3}
+  m_Script: {fileID: 1172385442, guid: bdb9aecc998904ee283e788be911376d, type: 3}
   m_Name: RhinoXGlobalSetting
   m_EditorClassIdentifier: 
-  DebugDrawShader: {fileID: 4800000, guid: fba0ab46acacf45b0b947f1bffaef0d9, type: 3}
+  DebugDrawShader: {fileID: 0}
   FrustumNear: 0.1
   FrustumFar: 1000
   FrustumLeft: -0.07968502
   FrustumRight: 0.07968502
-  FrustumTop: 0.07968502
-  FrustumBottom: -0.07968502
-  m_DefaultRectile: {fileID: 2800000, guid: d20c0a611620a41a7a5ead7663af6f52, type: 3}
+  FrustumTop: 0.07348122
+  FrustumBottom: -0.08588885
+  m_DefaultRectile: {fileID: 0}
+  m_SingleTapThreshold: 0.5
+  m_DoubleTapThreshold: 0.5
+  m_LongHeldThreshold: 2
   m_QuitWhenLongHoldHomeButton: 1
+  m_BeaconTrackingProfile: {fileID: 0}
+  m_ControllerTrackingProfile: {fileID: 0}
+  m_TrackingItem_Controller:
+    JSONConfig: {fileID: 0}
+    jsonName: 
+    jsonContent: 
+  m_TrackingItem_Beacons:
+    JSONConfig: {fileID: 0}
+    jsonName: 
+    jsonContent: 
+  m_EyePitch: 0
+  m_antiAliasing: 4
+  m_ControllerRotationFusionMode: 0
+  m_Force_2_0_Len_Parameter: 0
+  m_Len_2_0_EyePitch: -2
+  m_Len_2_0_VPUEulerPitch: 35
+  m_Len_2_0_VIOAnchorOffset: {x: 0.06, y: 0.05948, z: -0.08612}
