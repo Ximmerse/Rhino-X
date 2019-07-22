@@ -12,32 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 1172385442, guid: bdb9aecc998904ee283e788be911376d, type: 3}
   m_Name: RhinoXGlobalSetting
   m_EditorClassIdentifier: 
-  DebugDrawShader: {fileID: 0}
+  DebugDrawShader: {fileID: 4800000, guid: 9140807803c744cbe8427d89b0f76e22, type: 3}
   FrustumNear: 0.1
   FrustumFar: 1000
   FrustumLeft: -0.07968502
   FrustumRight: 0.07968502
   FrustumTop: 0.07348122
   FrustumBottom: -0.08588885
-  m_DefaultRectile: {fileID: 0}
+  m_DefaultRectile: {fileID: 2800000, guid: a4e5c7e6862cc4735a657a05b14d0b1f, type: 3}
   m_SingleTapThreshold: 0.5
   m_DoubleTapThreshold: 0.5
   m_LongHeldThreshold: 2
   m_QuitWhenLongHoldHomeButton: 1
-  m_BeaconTrackingProfile: {fileID: 0}
-  m_ControllerTrackingProfile: {fileID: 0}
+  m_BeaconTrackingProfile: {fileID: 102900000, guid: 38557658f98c849559e073e025aee197,
+    type: 3}
+  m_ControllerTrackingProfile: {fileID: 102900000, guid: c75a95585573f40479254e2957530c41,
+    type: 3}
   m_TrackingItem_Controller:
-    JSONConfig: {fileID: 0}
-    jsonName: 
-    jsonContent: 
+    JSONConfig: {fileID: 102900000, guid: c75a95585573f40479254e2957530c41, type: 3}
+    jsonName: Default-Controller.json
+    jsonContent: "{\r\n\t\"CARD_GROUP\":\r\n\t{\r\n\t\t\"CalibFile\": \"Default-Controller.dat\",\r\n\t\t\"ModeType\":
+      \"CONTROLLER\",\r\n\t\t\"GroupID\": 81,\r\n\t\t\"Markers\": [0, 5, 7, 10],\r\n\t\t\"MarkersSize\":
+      [0.04, 0.04, 0.04, 0.04]\r\n\t}\r\n}\r\n"
   m_TrackingItem_Beacons:
-    JSONConfig: {fileID: 0}
-    jsonName: 
-    jsonContent: 
+    JSONConfig: {fileID: 102900000, guid: 38557658f98c849559e073e025aee197, type: 3}
+    jsonName: BEACON-500.json
+    jsonContent: "{\r\n    \"CARD_SINGLE\":\r\n    {\r\n        \"CalibFile\": \"BEACON-500.dat\",\r\n
+      \       \"Markers\": [65,66,67],\r\n        \"MarkersSize\": [0.15,0.15,0.15]\r\n
+      \   }\r\n}\r\n"
   m_EyePitch: 0
   m_antiAliasing: 4
   m_ControllerRotationFusionMode: 0
-  m_Force_2_0_Len_Parameter: 0
-  m_Len_2_0_EyePitch: -2
+  m_Force_2_0_Len_Parameter: 1
+  m_Len_2_0_EyePitch: 0
   m_Len_2_0_VPUEulerPitch: 35
-  m_Len_2_0_VIOAnchorOffset: {x: 0.06, y: 0.05948, z: -0.08612}
+  m_Len_2_0_VIOAnchorOffset: {x: 0.06, y: -0.05948, z: -0.08612}
