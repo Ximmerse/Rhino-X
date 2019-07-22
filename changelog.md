@@ -11,3 +11,12 @@
 - 新的组件 : RxButtonEventTrigger , 提供在 Editor 上配置按键事件的Editor UI接口事件
 - 新增全局配置文件 : RhinoXGlobalSetting , 此对象必须放置在Resources目录下。 全部配置对象用于配置全局变量和属性。
  
+ 
+ 
+ ## v0.4b
+ - 重构了 RxController 类，另交互API接口更方便使用。
+ - 更新了 Low level tracking 库，VPU固件跟踪更稳定。
+ - 控制跟踪支持前向预测。
+ - 优化了双目渲染效果， 用户眼部更舒适。
+ 
+ 
