@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: fba0ab46acacf45b0b947f1bffaef0d9
+guid: 9140807803c744cbe8427d89b0f76e22
+labels:
+- RxDebugDrawShader
 ShaderImporter:
   externalObjects: {}
   defaultTextures: []

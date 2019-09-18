@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: 23d2be3e4ed0956429c95c548ded4cda
+timeCreated: 1453118010
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: hand_r
+    100002: index_r
+    100004: index_r_001
+    100006: index_r_002
+    100008: male_hand_high_r
+    100010: //RootNode
+    100012: male_r
+    100014: middle_r
+    100016: middle_r_001
+    100018: middle_r_002
+    100020: palm_r
+    100022: pinky_r
+    100024: pinky_r_001
+    100026: pinky_r_002
+    100028: ring_r
+    100030: ring_r_001
+    100032: ring_r_002
+    100034: thumb_r
+    100036: thumb_r_001
+    100038: thumb_r_002
+    400000: hand_r
+    400002: index_r
+    400004: index_r_001
+    400006: index_r_002
+    400008: male_hand_high_r
+    400010: //RootNode
+    400012: male_r
+    400014: middle_r
+    400016: middle_r_001
+    400018: middle_r_002
+    400020: palm_r
+    400022: pinky_r
+    400024: pinky_r_001
+    400026: pinky_r_002
+    400028: ring_r
+    400030: ring_r_001
+    400032: ring_r_002
+    400034: thumb_r
+    400036: thumb_r_001
+    400038: thumb_r_002
+    4300000: male_hand_high_r
+    7400000: Idle_Right
+    7400002: Grab_Right
+    9500000: //RootNode
+    13700000: male_hand_high_r
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Grab_Right
+      takeName: grab
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: male_hand_high_r
+        weight: 1
+      - path: male_r
+        weight: 1
+      - path: male_r/hand_r
+        weight: 1
+      - path: male_r/hand_r/index_r
+        weight: 1
+      - path: male_r/hand_r/index_r/index_r_001
+        weight: 1
+      - path: male_r/hand_r/index_r/index_r_001/index_r_002
+        weight: 1
+      - path: male_r/hand_r/middle_r
+        weight: 1
+      - path: male_r/hand_r/middle_r/middle_r_001
+        weight: 1
+      - path: male_r/hand_r/middle_r/middle_r_001/middle_r_002
+        weight: 1
+      - path: male_r/hand_r/palm_r
+        weight: 1
+      - path: male_r/hand_r/palm_r/pinky_r
+        weight: 1
+      - path: male_r/hand_r/palm_r/pinky_r/pinky_r_001
+        weight: 1
+      - path: male_r/hand_r/palm_r/pinky_r/pinky_r_001/pinky_r_002
+        weight: 1
+      - path: male_r/hand_r/ring_r
+        weight: 1
+      - path: male_r/hand_r/ring_r/ring_r_001
+        weight: 1
+      - path: male_r/hand_r/ring_r/ring_r_001/ring_r_002
+        weight: 1
+      - path: male_r/hand_r/thumb_r
+        weight: 1
+      - path: male_r/hand_r/thumb_r/thumb_r_001
+        weight: 1
+      - path: male_r/hand_r/thumb_r/thumb_r_001/thumb_r_002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle_Right
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: male_hand_high_r
+        weight: 1
+      - path: male_r
+        weight: 1
+      - path: male_r/hand_r
+        weight: 1
+      - path: male_r/hand_r/index_r
+        weight: 1
+      - path: male_r/hand_r/index_r/index_r_001
+        weight: 1
+      - path: male_r/hand_r/index_r/index_r_001/index_r_002
+        weight: 1
+      - path: male_r/hand_r/middle_r
+        weight: 1
+      - path: male_r/hand_r/middle_r/middle_r_001
+        weight: 1
+      - path: male_r/hand_r/middle_r/middle_r_001/middle_r_002
+        weight: 1
+      - path: male_r/hand_r/palm_r
+        weight: 1
+      - path: male_r/hand_r/palm_r/pinky_r
+        weight: 1
+      - path: male_r/hand_r/palm_r/pinky_r/pinky_r_001
+        weight: 1
+      - path: male_r/hand_r/palm_r/pinky_r/pinky_r_001/pinky_r_002
+        weight: 1
+      - path: male_r/hand_r/ring_r
+        weight: 1
+      - path: male_r/hand_r/ring_r/ring_r_001
+        weight: 1
+      - path: male_r/hand_r/ring_r/ring_r_001/ring_r_002
+        weight: 1
+      - path: male_r/hand_r/thumb_r
+        weight: 1
+      - path: male_r/hand_r/thumb_r/thumb_r_001
+        weight: 1
+      - path: male_r/hand_r/thumb_r/thumb_r_001/thumb_r_002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 95
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
