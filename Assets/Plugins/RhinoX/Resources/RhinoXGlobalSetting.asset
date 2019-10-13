@@ -22,7 +22,7 @@ MonoBehaviour:
   m_DefaultRectile: {fileID: 2800000, guid: a4e5c7e6862cc4735a657a05b14d0b1f, type: 3}
   m_SingleTapThreshold: 0.5
   m_DoubleTapThreshold: 0.5
-  m_LongHeldThreshold: 2
+  m_LongHeldThreshold: 1.5
   m_QuitWhenLongHoldHomeButton: 1
   m_BeaconTrackingProfile: {fileID: 102900000, guid: 38557658f98c849559e073e025aee197,
     type: 3}
@@ -47,3 +47,4 @@ MonoBehaviour:
   m_Len_2_0_EyePitch: 0
   m_Len_2_0_VPUEulerPitch: 35
   m_Len_2_0_VIOAnchorOffset: {x: 0.06, y: -0.05948, z: -0.08612}
+  m_OverrideVPUAlignment_ForLens_2_0: 0
