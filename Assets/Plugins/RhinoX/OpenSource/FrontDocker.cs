@@ -18,6 +18,7 @@ namespace Ximmerse.RhinoX
     /// </summary>
     public class FrontDocker : MonoBehaviour
     {
+#if UNITY_ANDROID
         [SerializeField]
         [Tooltip("Distance along Z-axis from head to dock position.")]
         float m_ZDepth = 4;
@@ -35,6 +36,25 @@ namespace Ximmerse.RhinoX
             set
             {
                 m_ZDepth = value;
+            }
+        }
+
+        [SerializeField, Tooltip ("Force docking every frame")]
+        bool m_ForceEveryFrame;
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="T:Ximmerse.RhinoX.FrontDocker"/> force every frame.
+        /// </summary>
+        /// <value><c>true</c> if force every frame; otherwise, <c>false</c>.</value>
+        public bool ForceEveryFrame
+        {
+            get
+            {
+                return m_ForceEveryFrame;
+            }
+            set
+            {
+                m_ForceEveryFrame = value;
             }
         }
 
@@ -97,6 +117,12 @@ namespace Ximmerse.RhinoX
             }
         }
 
+        /// <summary>
+        /// offset of docker position.
+        /// modify by leaf.2019.08.30
+        /// </summary>
+        public Vector3 PositionOffset;
+
         bool m_Docking = false;
 
         float dampSpeed = 0;
@@ -142,7 +168,7 @@ namespace Ximmerse.RhinoX
             var headT = headTransform;
             float headEulerY = headT.eulerAngles.y;
             float eulerYDiff = Quaternion.Angle( Quaternion.Euler(0, headEulerY, 0) , Quaternion.Euler(0, dockEulerY, 0));
-            if (Mathf.Abs(eulerYDiff) >= m_AngleDiffError)
+            if (m_ForceEveryFrame || Mathf.Abs(eulerYDiff) >= m_AngleDiffError)
             {
                 m_Docking = true;
                 if (m_DockingStartTime.HasValue == false)
@@ -159,12 +185,19 @@ namespace Ximmerse.RhinoX
                 }
                 else
                 {
-                    dockEulerY = Mathf.SmoothDampAngle(dockEulerY, headEulerY, ref dampSpeed, m_DampTime);
-                    float eulerYDiff2 = Quaternion.Angle(Quaternion.Euler(0, headEulerY, 0), Quaternion.Euler(0, dockEulerY, 0));
-                    if (eulerYDiff2 <= 2.5f)
+                    if(m_DampTime > 0)
                     {
-                        m_Docking = false;
-                        m_DockingStartTime = null;//reset docking start time
+                        dockEulerY = Mathf.SmoothDampAngle(dockEulerY, headEulerY, ref dampSpeed, m_DampTime);
+                        float eulerYDiff2 = Quaternion.Angle(Quaternion.Euler(0, headEulerY, 0), Quaternion.Euler(0, dockEulerY, 0));
+                        if (eulerYDiff2 <= 2.5f)
+                        {
+                            m_Docking = false;
+                            m_DockingStartTime = null;//reset docking start time
+                        }
+                    }
+                    else
+                    {
+                        dockEulerY = headEulerY;
                     }
                 }
 
@@ -172,8 +205,9 @@ namespace Ximmerse.RhinoX
             }
 
             //Update pos:
-            transform.position = headTransform.position + Quaternion.Euler(0, dockEulerY, 0) * Vector3.forward * m_ZDepth;
+            // modify by leaf.2019.08.30
+            transform.position = headTransform.position + Quaternion.Euler(0, dockEulerY, 0) * Vector3.forward * m_ZDepth + PositionOffset;
         }
-
+#endif
     }
 }

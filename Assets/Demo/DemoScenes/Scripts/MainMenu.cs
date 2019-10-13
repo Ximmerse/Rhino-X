@@ -32,8 +32,17 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Deer-Island", LoadSceneMode.Single);
     }
 
+    /// <summary>
+    /// Loads the demo : grabable object
+    /// </summary>
+    public void LoadDemo_Grabable()
+    {
+        SceneManager.LoadScene("GrabableDemo", LoadSceneMode.Single);
+    }
+
     public void BackToMainMenu ()
     {
         SceneManager.LoadScene("Controller UI", LoadSceneMode.Single);
     }
+
 }
