@@ -20,3 +20,18 @@
  - 优化了双目渲染效果， 用户眼部更舒适。
  
  
+ ## v0.5b
+ 
+- 优化了控制器追踪效果。推荐使用控制器的陀螺仪控制旋转，从Edit/ProjectSettings/RhinoX Setting 中设置 Controller Fusion Mode 为 Semi
+- GroundPlane的定位精确度提高，现在GroundPlane定位之后， 地面的中心点就在Beacon的物理中心点。
+- RXInputModule ： 现在支持任意控制器按键触发UI事件。
+- Demo : 添加了 GrabableDemo ， 标准化抓取操作。 见 Grabable.cs.
+- RXButtonEventTrigger : 除了支持UnityEvent外，添加了 C# 事件支持 : OnRhinoXButtonEvent 。 
+```bash
+        public delegate void RXButtonEventDelegate(RhinoXButton button, EventTriggerType eventType);
+
+        /// <summary>
+        /// API event : on RhinoX button event of event trigger type.
+        /// </summary>
+        public event RXButtonEventDelegate OnRhinoXButtonEvent;
+````
