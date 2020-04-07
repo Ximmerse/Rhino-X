@@ -11,7 +11,7 @@ MR (混合现实) 技术将改变我们使用计算机的方式。它很强大�
 
 ## 为什么要写这份设计指南？
 大部分MR头显的开发者网站上都有它们自己的设计指南。在这份文档中，我们无意总结他人的贡献，而是想向社区贡献我们自己的研究成果。
-诸如[存在感](/illusion)、[颜色规范](/interface?id=our-study-for-rhino-x)、[眼部空间UI](/interface?id=eye-space-ui-standard)以及[远场交互技巧 interaction techniques](/interaction?id=far-field-grabbing-techniques-zoom-grab-and-portal-grab)等概念都是我们对社区的独特贡献。我们期待听到你的意见和建议。
+诸如[存在感](/illusion?id=存在感)、[颜色规范](/interface?id=我们的工作)、[眼部空间UI](/interface?id=眼部空间ui标准)以及[远场交互技巧](/interaction?id=单手手柄的最佳实践指南)等概念都是我们对社区的独特贡献。我们期待听到你的意见和建议。
 
 ## 什么是MR？它和VR、AR不同在哪？
 科技圈最不缺的就是新概念，如VR（虚拟现实）、AR（增强现实）、Spatial Computing（空间计算）等。下面这个视频（暂时需要科学上网）很好地解释了这些概念的区别：

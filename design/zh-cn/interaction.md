@@ -42,7 +42,7 @@
 为了避免这一后果，设计师必须确保两点：首先兴趣点只有一个，并且兴趣点的流动是缓慢移动的、连续的、没有中断的。当这个流动被打断时（例如加载一个游戏场景），尝试将新的兴趣点直接放在用户面前，或者利用箭头引导他们的注意力。空间音效和粒子特效也会让用户更容易找到新的兴趣点。
 
 ## 单手手柄的最佳实践指南
-<img src="../images/Interaction_controller.png" height="400" style="margin: 0 auto; display: block;">
+<img src="images/Interaction_controller.png" height="400" style="margin: 0 auto; display: block;">
 目前Rhino X标配一个单手六自由度手柄。这个手柄的按键布局如上图。它的位置跟踪是通过Ximmerse特有的红外特征图像跟踪实现的。
 
 ### 技术限制

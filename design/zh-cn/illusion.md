@@ -89,7 +89,7 @@
   </tr>
 </table>
 
-## 对于深色要慎重Avoid dark color appearing in the view.
+## 对于深色要慎重
 深色物体无法在光学穿透的MR头显中被直接看到。根据我们的测试，在正常室内环境中使用Rhino X，亮度低于0.5（基于HSV色彩规范）的颜色在独立显示的情况下对比度不足。
 
 <table class="DoDont_table" cellspacing="100">
